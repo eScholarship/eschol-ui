@@ -12,16 +12,12 @@
 		!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
 	</script>
 	<style>
-		/* preload styles example, which gets set to 'display: none' in main.css as soon as it's loaded: */
-		.c-preload {
-			font-size: 1.3em;
-		}
+		/* preload styles to go here: */
 	</style>
 </head>
 <body>
 
-	<!-- preload html to go here, like this example: -->
-	<div class="c-preload">Loading eScholarship ...</div>
+	<!-- preload html to go here: -->
 
 	<div id="main"></div>
 

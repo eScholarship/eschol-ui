@@ -14,6 +14,7 @@ class AuthorListComp extends React.Component {
     return (
       <div className="c-authorlist">
         <ul className="c-authorlist__list">
+          <li><span className="c-authorlist__title">Author(s):</span> <a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
           <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
           <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
           <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
@@ -23,9 +24,8 @@ class AuthorListComp extends React.Component {
           <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
           <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
           <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
+          <li className="c-authorlist__trailing"><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
+          <li><span className="c-authorlist__title">Editor(s):</span> <a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
           <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
           <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
           <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>

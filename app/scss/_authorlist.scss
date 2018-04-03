@@ -16,12 +16,7 @@
   border-right: 1px solid $color-black;
 }
 
-.c-authorlist__list {
-  @extend %u-reset-list-styles;
-  max-height: 3.2em; // truncate beyond 3 lines per jquery.dotdotdot
-  overflow: hidden; // hide text beyond max-height
-
-  li {
+%c-authorlist__item {
     display: inline-block;
 
     &:nth-last-child(n+4) {
@@ -32,6 +27,22 @@
 
     }
 
+    a {
+      @extend %o-textlink__secondary;
+    }
+}
+
+.c-authorlist__list {
+  @extend %u-reset-list-styles;
+  max-height: 3.2em; // truncate beyond 3 lines per jquery.dotdotdot
+  overflow: hidden; // hide text beyond max-height
+
+  li {
+    @extend %c-authorlist__item;
+  }
+
+  li:not(.c-authorlist__trailing) {
+    @extend %c-authorlist__item;
     &:nth-last-child(n+3) {
 
       &::after {
@@ -40,12 +51,17 @@
 
     }
 
-    a {
-      @extend %o-textlink__secondary;
-    }
-
   }
 
+}
+
+.c-authorlist__title {
+  font-size: 1.1em;
+  font-weight: bold; 
+}
+
+.c-authorlist__list > li > .c-authorlist__title:nth-of-type(n+2)::before {
+  content: '\00a0\00a0';
 }
 
 .c-authorlist__list-more-link {

@@ -221,11 +221,11 @@ module.exports = NewDisp;
 
 Update the following 3 files with these changes:
 
-1. Open **main.scss** and add a new import rule referring to **\_new.scss**:
+1. Open **scss/main.scss** and add a new import rule referring to **\_new.scss**:
 ```scss
 @import 'new';
 ```
-2. Open **Home.jsx** and add a link to the component:
+2. Open **display/Home.jsx** and add a link to the component:
 ```html
 <li><a href="#new">New</a></li>
 ```

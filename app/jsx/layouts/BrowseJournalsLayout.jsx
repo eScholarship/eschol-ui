@@ -5,8 +5,8 @@ import Header1Comp from '../components/Header1Comp.jsx'
 import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
-import WellComp from '../components/WellComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
+import faker from 'faker/locale/en'
 
 class BrowseJournalsLayout extends React.Component {
   constructor(props){
@@ -87,7 +87,10 @@ class BrowseJournalsLayout extends React.Component {
               <header>
                 <h2>Journals</h2>
               </header>
-              <WellComp />
+              <div className="o-well-colored">
+                {faker.fake("{{lorem.paragraph}}") + ' '}
+                <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
+                {faker.fake("{{lorem.paragraph}}")}</div>
               <div className="o-input__inline">
                 <div className="o-input__droplist1">
                   <label className="o-input__label--hidden" htmlFor="o-input__droplist-label1">Show</label>

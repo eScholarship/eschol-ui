@@ -1,13 +1,13 @@
 // ##### Content Well Display ##### //
 
 import React from 'react'
-import WellComp from '../components/WellComp.jsx'
+import WellObj from '../objects/WellObj.jsx'
 
 class WellDisp extends React.Component {
   render() {
     return (
       <div>
-         <WellComp />
+         <WellObj />
       </div>
     )
   }

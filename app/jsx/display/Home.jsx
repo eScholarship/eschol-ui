@@ -40,7 +40,7 @@ class Home extends React.Component {
         </ul>
         <h2>Objects</h2>
         <ul>
-          <li><a href="#alert">Alterts</a></li>
+          <li><a href="#alert">Alerts</a></li>
           <li><a href="#button">Buttons</a></li>
           <li><a href="#columnbox">Column Boxes</a></li>
           <li><a href="#customselector">Custom Selectors</a></li>
@@ -53,8 +53,9 @@ class Home extends React.Component {
           <li><a href="#mediafeature">Media Feature</a></li>
           <li><a href="#mediafile">Media Files</a></li>
           <li><a href="#textlist">Text Lists</a></li>
-          <li><a href="#textlink">Text Links</a></li>
           <li><a href="#stats">Statistics</a></li>
+          <li><a href="#textlink">Text Links</a></li>
+          <li><a href="#well">Well for Content</a></li>
         </ul>
         <h2>Components</h2>
         <ul>
@@ -129,7 +130,6 @@ class Home extends React.Component {
           <li><a href="#unitlist">Unit List</a></li>
           <li><a href="#unitpub">Unit Publication</a></li>
           <li><a href="#viewexternal">View on External Site</a></li>
-          <li><a href="#well">Well for Content</a></li>
           <li><a href="#wizard">(Deposit) Wizard</a></li>
         </ul>
       </div>

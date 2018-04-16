@@ -3,10 +3,10 @@
 import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
-import WellComp from '../components/WellComp.jsx'
 import ToggleListComp from '../components/ToggleListComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 import MEDIA_PATH from '../../js/MediaPath.js'
+import faker from 'faker/locale/en'
 
 class BrowseDepartmentsLayout extends React.Component {
   constructor(props){
@@ -89,7 +89,10 @@ class BrowseDepartmentsLayout extends React.Component {
               <header>
                 <h2>Academic Units</h2>
               </header>
-              <WellComp />
+              <div className="o-well-colored">
+                {faker.fake("{{lorem.paragraph}}") + ' '}
+                <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
+                {faker.fake("{{lorem.paragraph}}")}</div>
               <ToggleListComp />
             </section>
           </main>

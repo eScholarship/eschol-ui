@@ -5,9 +5,9 @@ import Header1Comp from '../components/Header1Comp.jsx'
 import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
-import WellComp from '../components/WellComp.jsx'
 import DescriptionListComp from '../components/DescriptionListComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
+import faker from 'faker/locale/en'
 
 class BrowseCampusesLayout extends React.Component {
   constructor(props){
@@ -88,7 +88,10 @@ class BrowseCampusesLayout extends React.Component {
               <header>
                 <h2>Campuses</h2>
               </header>
-              <WellComp />
+              <div className="o-well-colored">
+                {faker.fake("{{lorem.paragraph}}") + ' '}
+               <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
+               {faker.fake("{{lorem.paragraph}}")}</div>
               <DescriptionListComp />
             </section>
           </main>

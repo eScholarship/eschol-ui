@@ -105,13 +105,28 @@ $scholworks-tag-height: 1.4em;
 
 }
 
+.c-scholworks__media {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  img {
+    margin-bottom: $spacing-sm;
+    margin-left: auto;
+  }
+
+}
+
+.c-scholworks__ancillary {
+  flex: 1 0 auto;
+  align-self: flex-start;
+}
+
 .c-scholworks__thumbnail {
   display: none;
 
   @include bp(screen1) {
     display: block;
-    flex: 0 0 auto;
-    align-self: flex-start;
     margin-top: calc(#{$scholworks-tag-height} + #{$spacing-md});
     margin-bottom: $spacing-sm;
     margin-left: $spacing-md;
@@ -127,14 +142,10 @@ $scholworks-tag-height: 1.4em;
 
 }
 
-.c-scholworks__media {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
+.c-scholworks__license {
+  display: block;
 
-  img {
-    margin-bottom: $spacing-sm;
-    margin-left: auto;
+  @include bp(screen1) {
+    margin-left: $spacing-md;    
   }
-
 }

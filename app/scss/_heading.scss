@@ -81,6 +81,7 @@
 
 %o-heading4a {
   @extend %o-heading;
+  margin: $spacing-md 0 $spacing-sm;
   color: $color-teal;
   font-size: 1em;
   font-weight: bold;

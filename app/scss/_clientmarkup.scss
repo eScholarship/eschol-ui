@@ -61,3 +61,16 @@
   }
 
 }
+
+// Used in MarqueeComp
+.c-clientmarkup.c-clientmarkup__dark-bg {
+
+  // ***** Links ***** //
+
+  a {
+    @extend %o-textlink__white;
+    font-size: inherit;
+    text-decoration: underline;
+  }
+  
+}

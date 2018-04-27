@@ -2,7 +2,7 @@
 
 %o-heading {
   margin-top: 0;
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing-sm;
 }
 
 %o-heading1 {
@@ -70,7 +70,7 @@
 
 %o-heading4 {
   @extend %o-heading;
-  margin: $spacing-md 0 $spacing-sm;
+  margin-bottom: $spacing-sm;
   font-size: 1em;
   font-weight: bold;
 }
@@ -81,7 +81,7 @@
 
 %o-heading4a {
   @extend %o-heading;
-  margin: $spacing-md 0 $spacing-sm;
+  margin-bottom: $spacing-sm;
   color: $color-teal;
   font-size: 1em;
   font-weight: bold;

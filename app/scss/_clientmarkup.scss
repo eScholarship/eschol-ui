@@ -6,18 +6,22 @@
 
   > h1 {
     @extend %o-heading1;
+    margin-top: $spacing-md;
   }
 
   > h2 {
     @extend %o-heading2;
+    margin-top: $spacing-md;
   }
 
   > h3 {
     @extend %o-heading3;
+    margin-top: $spacing-md;
   }
 
   > h4 {
     @extend %o-heading4;
+    margin-top: $spacing-md;
   }
 
   // ***** Links ***** //
@@ -62,15 +66,3 @@
 
 }
 
-// Used in MarqueeComp
-.c-clientmarkup.c-clientmarkup__dark-bg {
-
-  // ***** Links ***** //
-
-  a {
-    @extend %o-textlink__white;
-    font-size: inherit;
-    text-decoration: underline;
-  }
-  
-}

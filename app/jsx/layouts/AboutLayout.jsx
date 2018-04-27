@@ -87,26 +87,28 @@ class AboutLayout extends React.Component {
               <header>
                 <h2>About eScholarship</h2>
               </header>
-              <h1>Heading Level 1 {(faker.fake("{{commerce.productName}} {{finance.accountName}}"))}</h1>
-              <p>{faker.fake("{{lorem.paragraph}}") + ' '}
+              <h1>Heading Level 1 {(faker.fake("{{commerce.productName}} {{commerce.productName}}"))}</h1>
+              <p>{faker.fake("{{lorem.sentence}}") + ' '}
                 <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
-                {faker.fake("{{lorem.paragraph}}")}</p>
+                {faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</p>
+              <p>{faker.fake("{{lorem.paragraph}}")}</p>
               <h2>Heading Level 2 {(faker.fake("{{commerce.productName}} {{company.companyName}}"))}</h2>
-              <p>{faker.fake("{{lorem.paragraph}}") + ' '}
+              <p>{faker.fake("{{lorem.sentence}}") + ' '}
                 <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
-                {faker.fake("{{lorem.paragraph}}")}</p>
-              <h3>Heading Level 3 {(faker.fake("{{finance.accountName}} {{commerce.productName}}"))}</h3>
-              <p>{faker.fake("{{lorem.paragraph}}") + ' '}
+                {faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</p>
+              <h3>Heading Level 3 {(faker.fake("{{commerce.productName}} {{commerce.productName}}"))}</h3>
+              <p>{faker.fake("{{lorem.sentence}}") + ' '}
                 <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
-                {faker.fake("{{lorem.paragraph}}")}</p>
-              <h4>Heading Level 4 {(faker.fake("{{finance.accountName}} {{finance.accountName}} {{commerce.productName}}"))}</h4>
-              <p>{faker.fake("{{lorem.paragraph}}") + ' '}
+                {faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</p>
+              <h4>Heading Level 4 {(faker.fake("{{commerce.productName}} {{commerce.productName}} {{commerce.productName}}"))}</h4>
+              <p>{faker.fake("{{lorem.sentence}}") + ' '}
                 <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
-                {faker.fake("{{lorem.paragraph}}")}</p>
-              <h4>Heading Level 4 {(faker.fake("{{finance.accountName}} {{finance.accountName}} {{commerce.productName}}"))}</h4>
-              <p>{faker.fake("{{lorem.paragraph}}") + ' '}
+                {faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</p>
+              <p>{faker.fake("{{lorem.paragraph}}")}</p>
+              <h4>Heading Level 4 {(faker.fake("{{commerce.productName}} {{commerce.productName}} {{commerce.productName}}"))}</h4>
+              <p>{faker.fake("{{lorem.sentence}}") + ' '}
                 <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
-                {faker.fake("{{lorem.paragraph}}")}</p>
+                {faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</p>
               <ul>
                 <li>Unordered list</li>
                 <li>{faker.fake("{{lorem.sentence}} {{lorem.sentence}} {{lorem.sentence}}")}</li>

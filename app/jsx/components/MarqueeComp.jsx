@@ -54,8 +54,12 @@ class CarouselComp extends React.Component {
               <div><div>
                 <h1>Carousel Cell Title 1</h1>
                 <p>{faker.fake("{{lorem.sentence}}") + '  '}
-                <a href="">{faker.fake("{{lorem.sentence}}") + '  '}</a>
-                {faker.fake("{{lorem.paragraph}}")}</p>
+                  <a href="">{faker.fake("{{lorem.sentence}}") + '  '}</a>
+                  <ul>
+                    <li><a href="">{faker.fake("{{lorem.sentence}}") + '  '}</a></li>
+                    <li>{faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</li>
+                  </ul>
+                </p>
               </div></div>
             </div>
           </div>

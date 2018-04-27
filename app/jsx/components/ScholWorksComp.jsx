@@ -34,12 +34,16 @@ class ScholWorksComp extends React.Component {
           </div>
           <div className="c-scholworks__media">
             <MediaListComp />
-            <img src={MEDIA_PATH + 'cc-by-small.svg'} alt="creative commons attribution 4.0 international public license"/>
           </div>
         </div>
-        <a className="c-scholworks__thumbnail" href="">
-          <img src={MEDIA_PATH + 'temp_article.png'} alt="article"/>
-        </a>
+        <div className="c-scholworks__ancillary">
+          <a className="c-scholworks__thumbnail" href="">
+            <img src={MEDIA_PATH + 'temp_article.png'} alt="article"/>
+          </a>
+          <a className="c-scholworks__license" href="">
+            <img src={MEDIA_PATH + 'cc-by-small.svg'} alt="creative commons attribution 4.0 international public license"/>
+          </a>
+        </div>
       </section>
     )
   }

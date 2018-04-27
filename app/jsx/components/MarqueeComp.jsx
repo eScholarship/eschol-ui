@@ -3,6 +3,7 @@
 import React from 'react'
 import $ from 'jquery'
 import Flickity from 'flickity-imagesloaded'
+import MEDIA_PATH from '../../js/MediaPath.js'
 import faker from 'faker/locale/en'
 
 // Load dotdotdot in browser but not server:
@@ -48,9 +49,19 @@ class CarouselComp extends React.Component {
     return (
       <div className="c-marquee">
         <div className="c-marquee__carousel">
-          <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('http://lorempixel.com/500/500/nature')"}}>
-            <h1>Carousel Cell Title 1</h1>
-            <p>{faker.fake("{{lorem.paragraphs}}")}</p>
+          <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('"+ MEDIA_PATH + 'hero-ucb.jpg'+"')"}}>
+            <div className="c-clientmarkup c-clientmarkup__dark-bg">
+              <div><div>
+                <h1>Carousel Cell Title 1</h1>
+                <p>{faker.fake("{{lorem.sentence}}") + '  '}
+                  <a href="">{faker.fake("{{lorem.sentence}}") + '  '}</a>
+                  <ul>
+                    <li><a href="">{faker.fake("{{lorem.sentence}}") + '  '}</a></li>
+                    <li>{faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</li>
+                  </ul>
+                </p>
+              </div></div>
+            </div>
           </div>
           <div className="c-marquee__carousel-cell" style={{backgroundImage: "url('http://lorempixel.com/500/500/abstract')"}}>
             <h1>Carousel Cell Title 2</h1>

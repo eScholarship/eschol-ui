@@ -7,6 +7,7 @@ import NavComp from '../components/NavComp.jsx'
 import NavSubComp from '../components/NavSubComp.jsx'
 import Breakpoints from '../../js/breakpoints.json'
 import BreadcrumbComp from '../components/BreadcrumbComp.jsx'
+import faker from 'faker/locale/en'
 import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
 import ModalComp from '../components/ModalComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
@@ -86,31 +87,45 @@ class AboutLayout extends React.Component {
               <header>
                 <h2>About eScholarship</h2>
               </header>
-              <h1>Heading Level 1 Lorem Ipsum Dolor Sit Amet</h1>
-              <h2>Heading Level 2 Lorem Ipsum Dolor Sit Amet</h2>
-              <h3>Heading Level 3 Lorem Ipsum Dolor Sit Amet</h3>
-              <h4>Heading Level 4 Lorem Ipsum Dolor Sit Amet</h4>
-              <p>Paragraph containing links. eScholarship provides a suite of open access, <a href="https://escholarship.org">scholarly publishing services and research tools</a> that enable departments, research units, publishing programs, and individual scholars associated with the <a href="http://www.ucop.edu">University of California</a> to have direct control over the creation and dissemination of the full range of their scholarship.</p>
+              <h1>Heading Level 1 {(faker.fake("{{commerce.productName}} {{commerce.productName}}"))}</h1>
+              <p>{faker.fake("{{lorem.sentence}}") + ' '}
+                <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
+                {faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</p>
+              <p>{faker.fake("{{lorem.paragraph}}")}</p>
+              <h2>Heading Level 2 {(faker.fake("{{commerce.productName}} {{company.companyName}}"))}</h2>
+              <p>{faker.fake("{{lorem.sentence}}") + ' '}
+                <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
+                {faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</p>
+              <h3>Heading Level 3 {(faker.fake("{{commerce.productName}} {{commerce.productName}}"))}</h3>
+              <p>{faker.fake("{{lorem.sentence}}") + ' '}
+                <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
+                {faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</p>
+              <h4>Heading Level 4 {(faker.fake("{{commerce.productName}} {{commerce.productName}} {{commerce.productName}}"))}</h4>
+              <p>{faker.fake("{{lorem.sentence}}") + ' '}
+                <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
+                {faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</p>
+              <p>{faker.fake("{{lorem.paragraph}}")}</p>
+              <h4>Heading Level 4 {(faker.fake("{{commerce.productName}} {{commerce.productName}} {{commerce.productName}}"))}</h4>
+              <p>{faker.fake("{{lorem.sentence}}") + ' '}
+                <a href="">{faker.fake("{{lorem.sentence}}") + ' '}</a>
+                {faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</p>
               <ul>
                 <li>Unordered list</li>
-                <li>Debitis voluptate, corporis velit fugiat nostrum culpa</li>
-                <li>Aperiam natus vero, dolorum facere a consectetur odit eos eaque sit accusamus</li>
-                <li>Et fugiat dolorum dolores quo totam repellat</li>
+                <li>{faker.fake("{{lorem.sentence}} {{lorem.sentence}} {{lorem.sentence}}")}</li>
+                <li>{faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</li>
+                <li>{faker.fake("{{lorem.sentence}} {{lorem.sentence}} {{lorem.sentence}}")}</li>
               </ul>
               <img src="http://via.placeholder.com/400x100?text=Responsive+Image"/>
               <ol>
                 <li>Ordered list
                 </li>
-                <li>Vero reprehenderit eos quasi ut commodi deleniti incidunt alias suscipit quia iure repellendus
-                </li>
-                <li>Omnis iusto impedit unde autem, nostrum quos quaerat rerum voluptate quasi
-                </li>
-                <li>Iusto, sit repellat facilis obcaecati ipsa exercitationem id voluptatibus impedit blanditiis
-                </li>
+                <li>{faker.fake("{{lorem.sentence}} {{lorem.sentence}} {{lorem.sentence}}")}</li>
+                <li>{faker.fake("{{lorem.sentence}} {{lorem.sentence}}")}</li>
+                <li>{faker.fake("{{lorem.sentence}} {{lorem.sentence}} {{lorem.sentence}}")}</li>
               </ol>
-              <blockquote>Blockquote. Magni quo assumenda, voluptatum tempore itaque perspiciatis excepturi earum voluptatibus dolorum placeat nam fugiat inventore praesentium adipisci libero eos, fugit veritatis minima.
+              <blockquote>Blockquote. {faker.fake("{{lorem.paragraph}}")}
               </blockquote>
-              <p>Bold and italicized text. Cupiditate provident voluptas, <strong>commodi quos eius necessitatibus eveniet</strong> modi architecto quas <em>itaque culpa dolor possimus rem magni laboriosam!</em> Saepe beatae deserunt minus.
+              <p>Bold and italicized text. {faker.fake("{{lorem.paragraph}}")}
               </p>
               <ModalComp />
             </section>

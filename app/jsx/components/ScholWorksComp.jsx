@@ -30,11 +30,11 @@ class ScholWorksComp extends React.Component {
             <a href="">{faker.fake("{{commerce.department}}")} Journal, Volume 42, Issue 1</a> (2012)
           </div>
           <div className="c-scholworks__abstract">
-            <p>{faker.fake("{{lorem.words}}")}</p>
+            <p>{faker.fake("{{lorem.paragraph}}")}</p>
           </div>
-          {/*  <div className="c-scholworks__media">
+          <div className="c-scholworks__media">
             <MediaListComp />   
-          </div>  */}
+          </div>
         </div>
         <div className="c-scholworks__ancillary">
           <a className="c-scholworks__thumbnail" href="">

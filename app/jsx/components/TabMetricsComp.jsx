@@ -10,28 +10,30 @@ class TabMetricsComp extends React.Component {
         <h1 className="c-tabcontent__main-heading" tabIndex="-1">Metrics</h1>
         <div className="c-tabcontent__divide2x">
           <div className="c-tabcontent__divide2x-child">
-            <table className="c-datatable">
-              <caption>Total Usage</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Actions</th>
-                  <th scope="col">Total</th>
-                  <th scope="col">Monthly Average</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Hits</th>
-                  <td>Odio</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <th scope="row">Downloads</th>
-                  <td>Iusto</td>
-                  <td>Architecto</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="c-datatable">
+              <table>
+                <caption>Total Usage</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Actions</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Monthly Average</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Hits</th>
+                    <td>Odio</td>
+                    <td>Lorem</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Downloads</th>
+                    <td>Iusto</td>
+                    <td>Architecto</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <h2 className="o-heading3">By Month</h2>
             <div className="c-itemactions">
               <div className="o-input__droplist2">
@@ -51,32 +53,34 @@ class TabMetricsComp extends React.Component {
                 </select>
               </div>
             </div>
-            <table className="c-datatable">
-              <thead>
-                <tr>
-                  <th scope="col">Monthly</th>
-                  <th scope="col">Hits</th>
-                  <th scope="col">Downloads</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">2016-03</th>
-                  <td>1,268</td>
-                  <td>271</td>
-                </tr>
-                <tr>
-                  <th scope="row">2016-02</th>
-                  <td>1,269</td>
-                  <td>250</td>
-                </tr>
-                <tr>
-                  <th scope="row">2016-01</th>
-                  <td>1,110</td>
-                  <td>233</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="c-datatable">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Monthly</th>
+                    <th scope="col">Hits</th>
+                    <th scope="col">Downloads</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">2016-03</th>
+                    <td>1,268</td>
+                    <td>271</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2016-02</th>
+                    <td>1,269</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2016-01</th>
+                    <td>1,110</td>
+                    <td>233</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div className="c-tabcontent__divide2x-child">
             <img src={MEDIA_PATH + 'sample_data.png'} alt="sample data"/>

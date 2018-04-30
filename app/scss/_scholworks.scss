@@ -120,6 +120,7 @@ $scholworks-tag-height: 1.4em;
 .c-scholworks__ancillary {
   flex: 0 0 auto;
   align-self: flex-start;
+  width: 9.4em;
 }
 
 .c-scholworks__thumbnail {
@@ -136,7 +137,7 @@ $scholworks-tag-height: 1.4em;
 
   img {
     display: block;
-    width: 8em;
+    width: 128px;
     height: auto;
   }
 

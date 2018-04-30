@@ -22,18 +22,18 @@ class ScholWorksComp extends React.Component {
           </ul>
           <heading>
             <h2 className="c-scholworks__heading">
-              <a href="">From the New Heights: The City and Migrating Latinas in Real Woman Have Curves and Maria Full of Grace</a>
+              <a href="">{faker.fake("{{lorem.sentence}}")}</a>
             </h2 >
           </heading>
           <AuthorListComp />
           <div className="c-scholworks__publication">
-            <a href="">Mester Journal, Volume 42, Issue 1</a> (2012)
+            <a href="">{faker.fake("{{commerce.department}}")} Journal, Volume 42, Issue 1</a> (2012)
           </div>
           <div className="c-scholworks__abstract">
-            <p>{faker.fake("{{lorem.paragraphs}}")}</p>
+            <p>{faker.fake("{{lorem.paragraph}}")}</p>
           </div>
           <div className="c-scholworks__media">
-            <MediaListComp />
+            <MediaListComp />   
           </div>
         </div>
         <div className="c-scholworks__ancillary">

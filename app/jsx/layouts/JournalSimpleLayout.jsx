@@ -10,6 +10,7 @@ import PubComp from '../components/PubComp.jsx'
 import JournalInfoComp from '../components/JournalInfoComp.jsx'
 import RelatedItemsComp from '../components/RelatedItemsComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
+import faker from 'faker/locale/en'
 import $ from 'jquery'
 
 // Load dotdotdot in browser but not server:
@@ -19,10 +20,7 @@ if (!(typeof document === "undefined")) {
 
 class JournalSimpleLayout extends React.Component {
 
-  componentDidMount() {
-    $('.c-pub__heading, .c-pub__abstract').dotdotdot({watch: 'window'
-    });
-    
+  componentDidMount() {    
     $(this.element).dotdotdot({
       watch: 'window',
       after: '.o-columnbox__truncate-more',
@@ -89,7 +87,8 @@ class JournalSimpleLayout extends React.Component {
             <h2>About</h2>
           </header>
           <div className="o-columnbox__truncate1" ref={element => this.element = element}>
-            <p>A Journal of Italian Studies Edited by the Graduate Students of the Department of Italian at UCLA  <button className="o-columnbox__truncate-more">More</button>
+            <p>A Journal of Italian Studies {faker.fake("{{lorem.paragraph}}")}</p>
+            <p>{faker.fake("{{lorem.paragraph}} {{lorem.paragraph}}")} <button className="o-columnbox__truncate-more">More</button>
             </p>
           </div>
         </section>

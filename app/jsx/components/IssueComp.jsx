@@ -15,10 +15,8 @@ class IssueComp extends React.Component {
    setTimeout(()=> $(this.element).trigger('update'), 0) // removes 'more' link upon page load if less than truncation threshold
   }
   destroydotdotdot = event => {
-    // debugger;
-    $(this.element).removeClass("c-issue__caption-truncate")
     $(this.element).trigger('destroy')
-
+    $(this.element).removeClass("c-issue__caption-truncate")
   }
   render() {
     return (
@@ -29,12 +27,13 @@ class IssueComp extends React.Component {
             src="https://escholarship.org/images/homecover_fb.png"
             alt="journal cover" />
           <figcaption className="c-issue__caption-truncate" ref={e => this.element = e}>
-          <i>Cover Caption:</i> The cover image is from {faker.fake("{{lorem.paragraph}}")} <button className="c-issue__caption-truncate-more">More</button>
+            <div><i>Cover Caption:</i> The cover image is from {faker.fake("{{lorem.paragraph}}")} <button className="c-issue__caption-truncate-more">More</button></div>
           </figcaption>
         </figure>
         <div className="c-issue__description">
           <p>{faker.fake("{{lorem.paragraph}}")}</p>
-          <p>{faker.fake("{{lorem.paragraph}}")}</p>
+          {/* <p>{faker.fake("{{lorem.paragraph}}")}</p>
+          <p>{faker.fake("{{lorem.paragraph}} {{lorem.paragraph}}")}</p> */}
         </div>
       </div>
     )

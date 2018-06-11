@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
     "watch": "webpack --config webpack.dev.js --watch",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages --dist dist --remote upstream"
   },
   "author": "Joel Hagedorn",
   "license": "MIT",

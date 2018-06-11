@@ -27,13 +27,14 @@ class IssueComp extends React.Component {
             src="https://escholarship.org/images/homecover_fb.png"
             alt="journal cover" />
           <figcaption className="c-issue__caption-truncate" ref={e => this.element = e}>
-            <div><i>Cover Caption:</i> The cover image is from {faker.fake("{{lorem.paragraph}}")} <button className="c-issue__caption-truncate-more">More</button></div>
+            <div><i>Cover Caption:</i> The cover image is from {faker.fake("{{lorem.paragraph}} {{lorem.paragraph}} {{lorem.paragraph}}")} <button className="c-issue__caption-truncate-more">More</button></div>
           </figcaption>
         </figure>
         <div className="c-issue__description">
           <p>{faker.fake("{{lorem.paragraph}}")}</p>
-          {/* <p>{faker.fake("{{lorem.paragraph}}")}</p>
-          <p>{faker.fake("{{lorem.paragraph}} {{lorem.paragraph}}")}</p> */}
+          <p>{faker.fake("{{lorem.paragraph}}")}</p>
+          <p>{faker.fake("{{lorem.paragraph}}")}</p>
+          <p>{faker.fake("{{lorem.paragraph}} {{lorem.paragraph}}")}</p>
         </div>
       </div>
     )

@@ -22,10 +22,10 @@ class Home extends React.Component {
               <li><a href="#browsedepartments">Browse Departments (Campus-level)</a></li>
             </ul>
           </li>
-          <li><a href="#journalsplashy">Journal (Splashy)</a>
+          <li><a href="#journalsplashy">Journal (Splashy)</a></li>
+          <li><a href="#journalsimple">Journal (Simple)</a>
             <ul>
-              <li><a href="#journalsimple">Journal (Simple)</a></li>
-              <li><a href="#journalitemhtml">Journal Item (HTML)</a></li>
+              <li><a href="#journalitemhtml">Journal Item (HTML) - includes all tabs</a></li>
               <li><a href="#journalitemmultimedia">Journal Item (Multimedia)</a></li>
               <li><a href="#journalitempdf">Journal Item (PDF)</a></li>
             </ul>

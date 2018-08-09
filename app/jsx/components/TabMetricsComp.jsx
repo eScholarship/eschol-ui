@@ -85,13 +85,11 @@ class TabMetricsComp extends React.Component {
           <div className="c-tabcontent__divide2x-child">
             <div>
               <h2 className="o-heading3">Online Attention</h2>
-              <p>
-                <img src={MEDIA_PATH + 'sample_data.png'} alt="sample data"/>
-              </p>
+              <p><span><img src={MEDIA_PATH + 'sample_data.png'} alt="sample data"/></span></p>
+              <p><br/></p>
               <h2 className="o-heading3">Citations</h2>
-              <p>
-                <img src={MEDIA_PATH + 'sample_data.png'} alt="sample data"/>
-              </p>
+              <p><span><img src={MEDIA_PATH + 'sample_data.png'} alt="sample data"/></span></p>
+              <div className="c-tabcontent-hide">No citations currently found</div>
             </div>
           </div>
         </div>

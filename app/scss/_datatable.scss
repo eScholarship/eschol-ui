@@ -10,6 +10,10 @@ $table-border-size: 1px;
     td {
       text-align: left;
     }
+
+    th[scope='row'] {
+      font-size: .8em;
+    }
   }
 
   table {  

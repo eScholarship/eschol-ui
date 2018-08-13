@@ -8,7 +8,7 @@ class TabMetaComp extends React.Component {
     return (
       <div className="c-datatable c-datatable-leftalign">
         <table>
-          <caption>Metadata for item qt0sx7m29d  ({"React version " + React.version)</caption>
+          <caption>Metadata for item qt0sx7m29d </caption>
           <thead>
             <tr>
               <th scope="col">Name</th>

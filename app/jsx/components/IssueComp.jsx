@@ -6,22 +6,28 @@ import faker from 'faker/locale/en'
 import $ from 'jquery'
 
 class IssueComp extends React.Component {
-  componentDidMount() {    
-   $(this.element).dotdotdot({
-     watch: 'window',
-     after: '.c-issue__caption-truncate-more',
-     callback: ()=> $(this.element).find(".c-issue__caption-truncate-more").click(this.destroydotdotdot)
-  });
-   setTimeout(()=> $(this.element).trigger('update'), 0) // removes 'more' link upon page load if less than truncation threshold
-  }
-  destroydotdotdot = event => {
+
+  openAndAdjust = event => {
     $(this.element).trigger('destroy')
     $(this.element).removeClass("c-issue__caption-truncate")
+    let descr_h = ($(".c-issue__description")[0].offsetHeight)
+    let caption_h = ($(this.element)[0].offsetHeight)
+    $(".c-issue__description").height(descr_h + caption_h - 40)
   }
+
+  componentDidMount() {
+    $(this.element).dotdotdot({
+       watch: 'window',
+       after: '.c-issue__caption-truncate-more',
+       callback: () => $(this.element).find(".c-issue__caption-truncate-more").click(this.openAndAdjust)
+    });
+    setTimeout(() => $(this.element).trigger('update'), 0) // removes 'more' link upon page load if less than truncation threshold
+  }
+
   render() {
     return (
       <div className="c-issue">
-        <h3>Focus: Caribbean Studies and Literatures Lorem Ipsum Dolor Sit Amet</h3>
+        <h3>Focus Issue: {(faker.fake("{{commerce.productName}} {{commerce.productName}} {{commerce.productName}}"))}</h3>
         <figure className="c-issue__thumbnail">
           <LazyImageComp
             src="https://escholarship.org/images/homecover_fb.png"
@@ -31,6 +37,7 @@ class IssueComp extends React.Component {
           </figcaption>
         </figure>
         <div className="c-issue__description">
+          <p>{faker.fake("{{lorem.paragraph}}")}</p>
           <p>{faker.fake("{{lorem.paragraph}}")}</p>
           <p>{faker.fake("{{lorem.paragraph}}")}</p>
           <p>{faker.fake("{{lorem.paragraph}}")}</p>

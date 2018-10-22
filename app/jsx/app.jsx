@@ -102,6 +102,7 @@ import SeriesItemWithdrawnLayout from './layouts/SeriesItemWithdrawnLayout.jsx'
 import ServerErrorDisp from './display/ServerErrorDisp.jsx'
 import ShareDisp from './display/ShareDisp.jsx'
 import SkipNavDisp from './display/SkipNavDisp.jsx'
+import SocialFeedDisp from './display/SocialFeedDisp.jsx'
 import SocialIconsDisp from './display/SocialIconsDisp.jsx'
 import SortDisp from './display/SortDisp.jsx'
 import SortPaginationDisp from './display/SortPaginationDisp.jsx'
@@ -233,6 +234,7 @@ ReactDOM.render((
       <Route path="/servererror" component={ServerErrorDisp} />
       <Route path="/skipnav" component={SkipNavDisp} />
       <Route path="/share" component={ShareDisp} />
+      <Route path="/socialfeed" component={SocialFeedDisp} />
       <Route path="/socialicons" component={SocialIconsDisp} />
       <Route path="/sort" component={SortDisp} />
       <Route path="/sortpagination" component={SortPaginationDisp} />

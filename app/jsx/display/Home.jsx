@@ -109,6 +109,7 @@ class Home extends React.Component {
           <li><a href="#servererror">Server Error</a></li>
           <li><a href="#share">Share</a></li>
           <li><a href="#skipnav">Skip Navigation</a></li>
+          <li><a href="#socialfeed">Social Feed</a></li>
           <li><a href="#socialicons">Social Icons</a></li>
           <li><a href="#sort">Sort By</a></li>
           <li><a href="#sortpagination">Sort Pagination</a></li>

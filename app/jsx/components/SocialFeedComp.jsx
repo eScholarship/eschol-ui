@@ -12,25 +12,27 @@ class SocialFeedComp extends React.Component {
         <header>
           <h2>Follow Us On Twitter</h2>
         </header>
-        <Timeline
-          dataSource={{
-            sourceType: 'profile',
-            screenName: 'ucla'
-          }}
-          options={{
-            username: 'ucla',
-            height: '700'
-          }}
-          // onLoad={() => console.log('Timeline is loaded!') }
-        />
-        {/* <Mention
-           userName="amardesich"
-           options={{
-             text: 'TESTING',
-             size: 'large'
-           }}
-           // onLoad={() => console.log('Mention is loaded!') }
-         />  */}
+        <div className="c-socialfeed">
+          <Timeline
+            dataSource={{
+              sourceType: 'profile',
+              screenName: 'ucla'
+            }}
+            options={{
+              username: 'ucla',
+              height: '700'
+            }}
+            // onLoad={() => console.log('Timeline is loaded!') }
+          />
+          {/* <Mention
+             userName="amardesich"
+             options={{
+               text: 'TESTING',
+               size: 'large'
+             }}
+             // onLoad={() => console.log('Mention is loaded!') }
+           />  */}
+       </div>
       </section>
     )
   }

@@ -52,12 +52,13 @@
     "details-polyfill": "^1.0.2",
     "intersection-observer": "^0.4.3",
     "jquery": "^3.1.0",
-    "jquery.dotdotdot": "amywieliczka/jQuery.dotdotdot",
+    "jquery.dotdotdot": "amywieliczka/jQuery.dotdotdot#4f7d03a442ceca0b75a2fb641a065e47297d5666",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-modal": "^1.7.6",
     "react-responsive": "^1.1.4",
     "react-router": "^2.7.0",
+    "react-twitter-widgets": "^1.7.1",
     "smoothscroll-polyfill": "^0.4.0"
   },
   "browserslist": [

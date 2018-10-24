@@ -8,6 +8,7 @@ import CampusHeroComp from '../components/CampusHeroComp.jsx'
 import StatCarouselComp from '../components/StatCarouselComp.jsx'
 import UnitCarouselComp from '../components/UnitCarouselComp.jsx'
 import JournalCarouselComp from '../components/JournalCarouselComp.jsx'
+import SocialFeedComp from '../components/SocialFeedComp.jsx'
 import FooterComp from '../components/FooterComp.jsx'
 import MEDIA_PATH from '../../js/MediaPath.js'
 
@@ -23,7 +24,7 @@ class CampusLayout extends React.Component {
       this.widthChange()
     }
   }
-  widthChange = ()=> {
+  widthChange = () => {
     this.setState({isOpen: this.mq.matches})
   }
   render() {
@@ -133,12 +134,7 @@ class CampusLayout extends React.Component {
               </header>
               [content to go here]
             </section>
-            <section className="o-columnbox1">
-              <header>
-                <h2>Follow Us On Twitter</h2>
-              </header>
-              [content to go here]
-            </section>
+            <SocialFeedComp />
           </aside>
         </div>
         <div className="c-toplink">

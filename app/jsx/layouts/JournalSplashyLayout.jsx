@@ -93,16 +93,36 @@ class JournalSplashyLayout extends React.Component {
             </section>
             <section className="o-columnbox1">
               <header>
+                <h2>A sample CMS-generated section</h2>
+              </header>
+              <div className="c-clientmarkup">
+                <p>Beginning <strong>January 1, 2019</strong>, with Volume 36,&nbsp;<em>PaleoBios </em>will publish articles under the <strong>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International&nbsp;</strong><strong>(CC-BY-NC-SA)&nbsp;</strong>license.&nbsp;</p>
+                <p><img src="https://escholarship.org/assets/f5e110fc62408e6fddd7c1bd8c19cc6c85a148b7b91ee51c9584b0754c73892d" alt="CC_license" /></p>
+                <p>More information about the terms of use and distribution of article content under this agreement can be found at:&nbsp;</p>
+                <p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> https://creativecommons.org/licenses/by-nc-sa/4.0/<br/></a>
+                    <br/>
+                </p>
+              </div>
+            </section>
+            <section className="o-columnbox1">
+              <header>
+                  <h2>A sample CMS-generated section</h2></header>
+              <div className="c-clientmarkup">
+                <p></p>
+                <p>Receive new article announcements for&nbsp;<em>PaleoBios&nbsp;</em>&nbsp;by following the&nbsp;<strong>University of California Museum of Paleontology </strong>on<strong> Facebook</strong>&nbsp;&nbsp;</p>
+                <p><img src="https://picsum.photos/350/137/?random" alt="UCMP_FB" /></p>
+                <br />
+                <p><a href="https://www.facebook.com/ucmuseumofpaleontology/">https://www.facebook.com/ucmuseumofpaleontology/</a></p>
+                <hr />
+              </div>
+            </section>
+            <section className="o-columnbox1">
+              <header>
                 <h2>Featured Articles</h2>
               </header>
               <RelatedItemsComp />
             </section>
-            <section className="o-columnbox1">
-              <header>
-                <h2>Follow us on Twitter</h2>
-              </header>
-              [content to go here]
-            </section>
+
           </aside>
         </div>
         <div className="c-toplink">

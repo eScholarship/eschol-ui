@@ -1,7 +1,6 @@
 // ##### Subheader Component ##### //
 
 import React from 'react'
-import MEDIA_PATH from '../../js/MediaPath.js'
 
 class SubheaderComp extends React.Component {
   render() {
@@ -32,9 +31,9 @@ class SubheaderComp extends React.Component {
             </div>
           </details>
         </div>
-        <a className="c-subheader__banner--wide" href="">
+        <a className={this.props.wide ? "c-subheader__banner--wide" : "c-subheader__banner--narrow"} href="">
           <h1>Western Journal of Emergency Medicine</h1>
-          <img src={MEDIA_PATH + 'temp_journal-banner.png'} alt="Western Journal of Emergency Medicine"/>
+          <img src={this.props.banner} alt="Western Journal of Emergency Medicine"/>
         </a>
         <div className="c-subheader__sidebar">
           <button className="o-button__3">Submit</button>

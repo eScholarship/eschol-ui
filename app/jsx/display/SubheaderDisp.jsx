@@ -8,7 +8,7 @@ class SubheaderDisp extends React.Component {
   render() {
     return (
       <div>
-        <h3>For wide setting, Ideal banner dimensions are 9.19 x 1 and no higher than 87 pixels. Otherwise, image gets stretched or becomes too narrow (in most browsers).</h3>
+        <h3>For wide setting, Ideal banner dimensions are 9.19 x 1 and no higher than 87 pixels. NB: There is a restriction built into the CMS that should prevent images with incompatible dimensions from being submitted in the first place.</h3>
         <hr />
         <h2>Wide Setting: Logo image contains the full, legible title of your site. Banner = 675 x 75 pixels</h2>
         <SubheaderComp banner={MEDIA_PATH + 'temp_journal-banner.png'} wide={true} />

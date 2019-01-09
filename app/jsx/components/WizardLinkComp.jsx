@@ -19,7 +19,7 @@ class WizardLinkComp extends React.Component {
         </div>
         <div className="c-wizard__message">
           <p>Faculty use the UC Publication Management system for all eScholarship deposits– including to claim and deposit publications in compliance with the <a href="">UC Academic Senate faculty Open Acces Policy</a>.</p>
-          <a className="c-wizard__external-link" href="">Go to UC Publication Management</a>
+          <div className="c-wizard__centered"><a className="c-wizard__external-link" href="">Go to UC Publication Management</a></div>
         </div>
         <footer>
           Alternately, you may choose to wait for the system to automatically detect your new publication and send you a deposit link via email.

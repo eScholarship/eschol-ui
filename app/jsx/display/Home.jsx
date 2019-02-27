@@ -131,6 +131,7 @@ class Home extends React.Component {
           <li><a href="#unitlist">Unit List</a></li>
           <li><a href="#unitpub">Unit Publication</a></li>
           <li><a href="#viewexternal">View on External Site</a></li>
+          <li><a href="#withdrawmodal">Withdraw Modal</a></li>
           <li><a href="#wizard">(Deposit) Wizard</a></li>
         </ul>
       </div>

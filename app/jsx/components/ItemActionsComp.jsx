@@ -6,6 +6,7 @@
 
 import React from 'react'
 import ShareComp from '../components/ShareComp.jsx'
+import WithdrawModalComp from '../components/WithdrawModalComp.jsx'
 
 class ItemActionsComp extends React.Component {
   render() {
@@ -46,6 +47,7 @@ class ItemActionsComp extends React.Component {
             </ul>
           </details>
         </div>
+        <WithdrawModalComp/>
         <button className="c-itemactions__button-print">Buy in Print</button>
         <button className="c-itemactions__button-buy">Buy e-Book</button>
         <ShareComp />

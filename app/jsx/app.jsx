@@ -128,6 +128,7 @@ import UnitSeriesDisp from './display/UnitSeriesDisp.jsx'
 import UnitSimpleLayout from './layouts/UnitSimpleLayout.jsx'
 import ViewExternalDisp from './display/ViewExternalDisp.jsx'
 import WellDisp from './display/WellDisp.jsx'
+import WithdrawModalDisp from './display/WithdrawModalDisp.jsx'
 import WizardDisp from './display/WizardDisp.jsx'
 
 // ***** UI Library Home Page ***** //
@@ -260,6 +261,7 @@ ReactDOM.render((
       <Route path="/unitsimple" component={UnitSimpleLayout} />
       <Route path="/viewexternal" component={ViewExternalDisp} />
       <Route path="/well" component={WellDisp} />
+      <Route path="/withdrawmodal" component={WithdrawModalDisp} />
       <Route path="/wizard" component={WizardDisp} />
     </Route>
   </Router>

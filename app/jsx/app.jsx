@@ -14,7 +14,7 @@ if (!(typeof document === "undefined")) {
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
+import { HashRouter, Link, Route, Switch } from 'react-router-dom'
 
 // ***** Stylesheets ***** //
 
@@ -142,10 +142,118 @@ class App extends React.Component {
             <Link to="/">eScholarship UI Library</Link>
           </div>
           <div className="ui-library__component">
-            {this.props.children.type.name.replace("Page", "")}
+            {window.location.href.replace(/.*#\//, '')}
           </div>
         </div>
-        {this.props.children}
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={AboutLayout} />
+          <Route path="/alert" component={AlertDisp} />
+          <Route path="/authorlist" component={AuthorListDisp} />
+          <Route path="/breadcrumb" component={BreadcrumbDisp} />
+          <Route path="/browsecampuses" component={BrowseCampusesLayout} />
+          <Route path="/browsedepartments" component={BrowseDepartmentsLayout} />
+          <Route path="/browsejournals" component={BrowseJournalsLayout} />
+          <Route path="/campus" component={CampusLayout} />
+          <Route path="/campuscarouselframe" component={CampusCarouselFrameDisp} />
+          <Route path="/campushero" component={CampusHeroDisp} />
+          <Route path="/campussearch" component={CampusSearchDisp} />
+          <Route path="/button" component={ButtonDisp} />
+          <Route path="/checkbox" component={CheckboxDisp} />
+          <Route path="/columnbox" component={ColumnBoxDisp} />
+          <Route path="/columns" component={ColumnsDisp} />
+          <Route path="/customselector" component={CustomSelectorDisp} />
+          <Route path="/datatable" component={DataTableDisp} />
+          <Route path="/daterange" component={DateRangeDisp} />
+          <Route path="/descriptionlist" component={DescriptionListDisp} />
+          <Route path="/dividecontent" component={DivideContentDisp} />
+          <Route path="/download" component={DownloadDisp} />
+          <Route path="/error404" component={Error404Layout} />
+          <Route path="/export" component={ExportDisp} />
+          <Route path="/input" component={InputDisp} />
+          <Route path="/facetbox" component={FacetBoxDisp} />
+          <Route path="/filter" component={FilterDisp} />
+          <Route path="/footer" component={FooterDisp} />
+          <Route path="/header1" component={Header1Disp} />
+          <Route path="/header2" component={Header2Disp} />
+          <Route path="/heading" component={HeadingDisp} />
+          <Route path="/home" component={HomeLayout} />
+          <Route path="/homehero" component={HeroDisp} />
+          <Route path="/homesections" component={HomeSectionsDisp} />
+          <Route path="/infopages" component={InfoPagesDisp} />
+          <Route path="/issue" component={IssueDisp} />
+          <Route path="/itemactions" component={ItemActionsDisp} />
+          <Route path="/itemunavailable" component={ItemUnavailableDisp} />
+          <Route path="/journal" component={JournalDisp} />
+          <Route path="/journalcarousel" component={JournalCarouselDisp} />
+          <Route path="/journalgrid" component={JournalGridDisp} />
+          <Route path="/journalsimple" component={JournalSimpleLayout} />
+          <Route path="/journalsplashy" component={JournalSplashyLayout} />
+          <Route path="/journalinfo" component={JournalInfoDisp} />
+          <Route path="/journalitemhtml" component={JournalItemHtmlLayout} />
+          <Route path="/journalitemmultimedia" component={JournalItemMultimediaLayout} />
+          <Route path="/journalitempdf" component={JournalItemPdfLayout} />
+          <Route path="/jump" component={JumpDisp} />
+          <Route path="/language" component={LanguageDisp} />
+          <Route path="/lazyimage" component={LazyImageDisp} />
+          <Route path="/marquee" component={MarqueeDisp} />
+          <Route path="/mediafeature" component={MediaFeatureDisp} />
+          <Route path="/mediafile" component={MediaFileDisp} />
+          <Route path="/mediafilegrid" component={MediaFileGridDisp} />
+          <Route path="/medialist" component={MediaListDisp} />
+          <Route path="/mediaviewer" component={MediaViewerDisp} />
+          <Route path="/modal" component={ModalDisp} />
+          <Route path="/nav" component={NavDisp} />
+          <Route path="/navbar" component={NavBarDisp} />
+          <Route path="/pagination" component={PaginationDisp} />
+          <Route path="/pdfview" component={PdfViewDisp} />
+          <Route path="/pub" component={PubDisp} />
+          <Route path="/pubdata" component={PubDataDisp} />
+          <Route path="/pubinfo" component={PubInfoDisp} />
+          <Route path="/publocation" component={PubLocationDisp} />
+          <Route path="/pubpreview" component={PubPreviewDisp} />
+          <Route path="/pubyear" component={PubYearDisp} />
+          <Route path="/refine" component={RefineDisp} />
+          <Route path="/relateditems" component={RelatedItemsDisp} />
+          <Route path="/scholworks" component={ScholWorksDisp} />
+          <Route path="/search1" component={Search1Disp} />
+          <Route path="/search2" component={Search2Disp} />
+          <Route path="/searchlayout" component={SearchLayout} />
+          <Route path="/seriesitemembargoed" component={SeriesItemEmbargoedLayout} />
+          <Route path="/seriesitemurl" component={SeriesItemUrlLayout} />
+          <Route path="/seriesitemwithdrawn" component={SeriesItemWithdrawnLayout} />
+          <Route path="/servererror" component={ServerErrorDisp} />
+          <Route path="/skipnav" component={SkipNavDisp} />
+          <Route path="/share" component={ShareDisp} />
+          <Route path="/socialfeed" component={SocialFeedDisp} />
+          <Route path="/socialicons" component={SocialIconsDisp} />
+          <Route path="/sort" component={SortDisp} />
+          <Route path="/sortpagination" component={SortPaginationDisp} />
+          <Route path="/statcarousel" component={StatCarouselDisp} />
+          <Route path="/stats" component={StatsDisp} />
+          <Route path="/subheader" component={SubheaderDisp} />
+          <Route path="/tabmain" component={TabMainDisp} />
+          <Route path="/tabsupplemental" component={TabSupplementalDisp} />
+          <Route path="/tabmetrics" component={TabMetricsDisp} />
+          <Route path="/tabauthor" component={TabAuthorDisp} />
+          <Route path="/tabcomments" component={TabCommentsDisp} />
+          <Route path="/tabs" component={TabsDisp} />
+          <Route path="/teaser" component={TeaserDisp} />
+          <Route path="/testmessage" component={TestMessageDisp} />
+          <Route path="/textlist" component={TextListDisp} />
+          <Route path="/textlink" component={TextlinkDisp} />
+          <Route path="/togglecontent" component={ToggleContentDisp} />
+          <Route path="/togglelist" component={ToggleListDisp} />
+          <Route path="/togglesection" component={ToggleSectionDisp} />
+          <Route path="/unitcarousel" component={UnitCarouselDisp} />
+          <Route path="/unitlist" component={UnitListDisp} />
+          <Route path="/unitpub" component={UnitSeriesDisp} />
+          <Route path="/unitsimple" component={UnitSimpleLayout} />
+          <Route path="/viewexternal" component={ViewExternalDisp} />
+          <Route path="/well" component={WellDisp} />
+          <Route path="/withdrawmodal" component={WithdrawModalDisp} />
+          <Route path="/wizard" component={WizardDisp} />
+        </Switch>
       </div>
     )
   }
@@ -154,115 +262,7 @@ class App extends React.Component {
 // ***** React Router ***** //
 
 ReactDOM.render((
-  <Router>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home} />
-      <Route path="/about" component={AboutLayout} />
-      <Route path="/alert" component={AlertDisp} />
-      <Route path="/authorlist" component={AuthorListDisp} />
-      <Route path="/breadcrumb" component={BreadcrumbDisp} />
-      <Route path="/browsecampuses" component={BrowseCampusesLayout} />
-      <Route path="/browsedepartments" component={BrowseDepartmentsLayout} />
-      <Route path="/browsejournals" component={BrowseJournalsLayout} />
-      <Route path="/campus" component={CampusLayout} />
-      <Route path="/campuscarouselframe" component={CampusCarouselFrameDisp} />
-      <Route path="/campushero" component={CampusHeroDisp} />
-      <Route path="/campussearch" component={CampusSearchDisp} />
-      <Route path="/button" component={ButtonDisp} />
-      <Route path="/checkbox" component={CheckboxDisp} />
-      <Route path="/columnbox" component={ColumnBoxDisp} />
-      <Route path="/columns" component={ColumnsDisp} />
-      <Route path="/customselector" component={CustomSelectorDisp} />
-      <Route path="/datatable" component={DataTableDisp} />
-      <Route path="/daterange" component={DateRangeDisp} />
-      <Route path="/descriptionlist" component={DescriptionListDisp} />
-      <Route path="/dividecontent" component={DivideContentDisp} />
-      <Route path="/download" component={DownloadDisp} />
-      <Route path="/error404" component={Error404Layout} />
-      <Route path="/export" component={ExportDisp} />
-      <Route path="/input" component={InputDisp} />
-      <Route path="/facetbox" component={FacetBoxDisp} />
-      <Route path="/filter" component={FilterDisp} />
-      <Route path="/footer" component={FooterDisp} />
-      <Route path="/header1" component={Header1Disp} />
-      <Route path="/header2" component={Header2Disp} />
-      <Route path="/heading" component={HeadingDisp} />
-      <Route path="/home" component={HomeLayout} />
-      <Route path="/homehero" component={HeroDisp} />
-      <Route path="/homesections" component={HomeSectionsDisp} />
-      <Route path="/infopages" component={InfoPagesDisp} />
-      <Route path="/issue" component={IssueDisp} />
-      <Route path="/itemactions" component={ItemActionsDisp} />
-      <Route path="/itemunavailable" component={ItemUnavailableDisp} />
-      <Route path="/journal" component={JournalDisp} />
-      <Route path="/journalcarousel" component={JournalCarouselDisp} />
-      <Route path="/journalgrid" component={JournalGridDisp} />
-      <Route path="/journalsimple" component={JournalSimpleLayout} />
-      <Route path="/journalsplashy" component={JournalSplashyLayout} />
-      <Route path="/journalinfo" component={JournalInfoDisp} />
-      <Route path="/journalitemhtml" component={JournalItemHtmlLayout} />
-      <Route path="/journalitemmultimedia" component={JournalItemMultimediaLayout} />
-      <Route path="/journalitempdf" component={JournalItemPdfLayout} />
-      <Route path="/jump" component={JumpDisp} />
-      <Route path="/language" component={LanguageDisp} />
-      <Route path="/lazyimage" component={LazyImageDisp} />
-      <Route path="/marquee" component={MarqueeDisp} />
-      <Route path="/mediafeature" component={MediaFeatureDisp} />
-      <Route path="/mediafile" component={MediaFileDisp} />
-      <Route path="/mediafilegrid" component={MediaFileGridDisp} />
-      <Route path="/medialist" component={MediaListDisp} />
-      <Route path="/mediaviewer" component={MediaViewerDisp} />
-      <Route path="/modal" component={ModalDisp} />
-      <Route path="/nav" component={NavDisp} />
-      <Route path="/navbar" component={NavBarDisp} />
-      <Route path="/pagination" component={PaginationDisp} />
-      <Route path="/pdfview" component={PdfViewDisp} />
-      <Route path="/pub" component={PubDisp} />
-      <Route path="/pubdata" component={PubDataDisp} />
-      <Route path="/pubinfo" component={PubInfoDisp} />
-      <Route path="/publocation" component={PubLocationDisp} />
-      <Route path="/pubpreview" component={PubPreviewDisp} />
-      <Route path="/pubyear" component={PubYearDisp} />
-      <Route path="/refine" component={RefineDisp} />
-      <Route path="/relateditems" component={RelatedItemsDisp} />
-      <Route path="/scholworks" component={ScholWorksDisp} />
-      <Route path="/search1" component={Search1Disp} />
-      <Route path="/search2" component={Search2Disp} />
-      <Route path="/searchlayout" component={SearchLayout} />
-      <Route path="/seriesitemembargoed" component={SeriesItemEmbargoedLayout} />
-      <Route path="/seriesitemurl" component={SeriesItemUrlLayout} />
-      <Route path="/seriesitemwithdrawn" component={SeriesItemWithdrawnLayout} />
-      <Route path="/servererror" component={ServerErrorDisp} />
-      <Route path="/skipnav" component={SkipNavDisp} />
-      <Route path="/share" component={ShareDisp} />
-      <Route path="/socialfeed" component={SocialFeedDisp} />
-      <Route path="/socialicons" component={SocialIconsDisp} />
-      <Route path="/sort" component={SortDisp} />
-      <Route path="/sortpagination" component={SortPaginationDisp} />
-      <Route path="/statcarousel" component={StatCarouselDisp} />
-      <Route path="/stats" component={StatsDisp} />
-      <Route path="/subheader" component={SubheaderDisp} />
-      <Route path="/tabmain" component={TabMainDisp} />
-      <Route path="/tabsupplemental" component={TabSupplementalDisp} />
-      <Route path="/tabmetrics" component={TabMetricsDisp} />
-      <Route path="/tabauthor" component={TabAuthorDisp} />
-      <Route path="/tabcomments" component={TabCommentsDisp} />
-      <Route path="/tabs" component={TabsDisp} />
-      <Route path="/teaser" component={TeaserDisp} />
-      <Route path="/testmessage" component={TestMessageDisp} />
-      <Route path="/textlist" component={TextListDisp} />
-      <Route path="/textlink" component={TextlinkDisp} />
-      <Route path="/togglecontent" component={ToggleContentDisp} />
-      <Route path="/togglelist" component={ToggleListDisp} />
-      <Route path="/togglesection" component={ToggleSectionDisp} />
-      <Route path="/unitcarousel" component={UnitCarouselDisp} />
-      <Route path="/unitlist" component={UnitListDisp} />
-      <Route path="/unitpub" component={UnitSeriesDisp} />
-      <Route path="/unitsimple" component={UnitSimpleLayout} />
-      <Route path="/viewexternal" component={ViewExternalDisp} />
-      <Route path="/well" component={WellDisp} />
-      <Route path="/withdrawmodal" component={WithdrawModalDisp} />
-      <Route path="/wizard" component={WizardDisp} />
-    </Route>
-  </Router>
+  <HashRouter>
+    <App/>
+  </HashRouter>
 ), document.getElementById('main'))

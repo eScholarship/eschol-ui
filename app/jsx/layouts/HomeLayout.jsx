@@ -81,24 +81,26 @@ class HomeLayout extends React.Component {
         </div>
         <HeroComp />
         <TeaserComp />
-        <section className="c-homesection">
-          <header>
-            <h2>Why Open Access with eScholarship?</h2>
-          </header>
-          <HomeSection1Comp />
-        </section>
-        <section className="c-homesection">
-          <header>
-            <h2>eScholarship is the institutional repository for the UC system</h2>
-          </header>
-          <HomeSection2Comp />
-        </section>
-        <section className="c-homesection">
-          <header>
-            <h2>eScholarship is also an open access publishing platform</h2>
-          </header>
-          <HomeSection3Comp />
-        </section>
+        <main id="maincontent" tabIndex="-1">
+          <section className="c-homesection">
+            <header>
+              <h2>Why Open Access with eScholarship?</h2>
+            </header>
+            <HomeSection1Comp />
+          </section>
+          <section className="c-homesection">
+            <header>
+              <h2>eScholarship is the institutional repository for the UC system</h2>
+            </header>
+            <HomeSection2Comp />
+          </section>
+          <section className="c-homesection">
+            <header>
+              <h2>eScholarship is also an open access publishing platform</h2>
+            </header>
+            <HomeSection3Comp />
+          </section>
+        </main>
         <div className="c-toplink">
           <a href="#top">Top</a>
         </div>

@@ -83,7 +83,7 @@ class BrowseCampusesLayout extends React.Component {
           </ul>
         </nav>
         <div className="c-columns">
-          <main id="maincontent">
+          <main id="maincontent" tabIndex="-1">
             <section className="o-columnbox1">
               <header>
                 <h2>Campuses</h2>

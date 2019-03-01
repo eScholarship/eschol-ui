@@ -76,7 +76,7 @@ class Error404Layout extends React.Component {
           </nav>
         </div>
         <div className="c-columns">
-          <main id="maincontent">
+          <main id="maincontent" tabIndex="-1">
             <section className="o-columnbox1">
               <ServerErrorComp />
             </section>

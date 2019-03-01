@@ -15,6 +15,7 @@ if (!(typeof document === "undefined")) {
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { HashRouter, Link, Route, Switch } from 'react-router-dom'
+import ReactModal from 'react-modal'
 
 // ***** Stylesheets ***** //
 
@@ -132,6 +133,8 @@ import WithdrawModalDisp from './display/WithdrawModalDisp.jsx'
 import WizardDisp from './display/WizardDisp.jsx'
 
 // ***** UI Library Home Page ***** //
+
+ReactModal.setAppElement('#main')
 
 class App extends React.Component {
   render() {

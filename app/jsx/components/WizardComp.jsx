@@ -34,9 +34,9 @@ class WizardComp extends React.Component {
   }
 
   handleOpenModal = ()=> {
-    this.setState({ showModal: true });
+    this.setState({ wizardStep: 1, wizardDir: 'fwd', showModal: true });
   }
-  
+
   handleCloseModal = ()=> {
     this.setState({ showModal: false });
   }                 
@@ -44,29 +44,43 @@ class WizardComp extends React.Component {
   render() {
     return (
       <div className="c-modal">
-        <ReactModal 
-          isOpen={this.state.showModal}
-          contentLabel="onRequestClose Example"
-          onRequestClose={this.handleCloseModal}
-          className="c-wizard__modal"
-          overlayClassName="c-modal__overlay"
-        >
+        <ReactModal isOpen={this.state.showModal && this.state.wizardStep === 1} className="c-wizard__modal" overlayClassName="c-modal__overlay">
           <div className="c-wizard">
             <div className={this.state.wizardStep === 1 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`} aria-hidden={this.state.wizardStep === 1 ? null : true}>
               <WizardRoleComp goForward = {this.goForward} closeModal={this.handleCloseModal} />
             </div>
+          </div>
+        </ReactModal>
+        <ReactModal isOpen={this.state.showModal && this.state.wizardStep === 2} className="c-wizard__modal" overlayClassName="c-modal__overlay">
+          <div className="c-wizard">
             <div className={this.state.wizardStep === 2 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`} aria-hidden={this.state.wizardStep === 2 ? null : true}>
               <WizardCampusComp goForward = {this.goForward} goBackward = {this.goBackward} closeModal={this.handleCloseModal} />
             </div>
-            <div className={this.state.wizardStep === 3 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`} aria-hidden={this.state.wizardStep === 3 ? null : true}>
-              <WizardTypeComp goForward = {this.goForward} goBackward = {this.goBackward} closeModal={this.handleCloseModal} />
+          </div>
+        </ReactModal>
+        <ReactModal isOpen={this.state.showModal && this.state.wizardStep === 3} className="c-wizard__modal" overlayClassName="c-modal__overlay">
+          <div className="c-wizard">
+          <div className={this.state.wizardStep === 3 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`} aria-hidden={this.state.wizardStep === 3 ? null : true}>
+            <WizardTypeComp goForward = {this.goForward} goBackward = {this.goBackward} closeModal={this.handleCloseModal} />
             </div>
+          </div>
+        </ReactModal>
+        <ReactModal isOpen={this.state.showModal && this.state.wizardStep === 4} className="c-wizard__modal" overlayClassName="c-modal__overlay">
+          <div className="c-wizard">
             <div className={this.state.wizardStep === 4 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`} aria-hidden={this.state.wizardStep === 4 ? null : true}>
               <WizardUnitComp goForward = {this.goForward} goBackward = {this.goBackward} closeModal={this.handleCloseModal} />
             </div>
+          </div>
+        </ReactModal>
+        <ReactModal isOpen={this.state.showModal && this.state.wizardStep === 5} className="c-wizard__modal" overlayClassName="c-modal__overlay">
+          <div className="c-wizard">
             <div className={this.state.wizardStep === 5 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`} aria-hidden={this.state.wizardStep === 5 ? null : true}>
               <WizardSeriesComp goForward = {this.goForward} goBackward = {this.goBackward} closeModal={this.handleCloseModal} />
             </div>
+          </div>
+        </ReactModal>
+        <ReactModal isOpen={this.state.showModal && this.state.wizardStep === 6} className="c-wizard__modal" overlayClassName="c-modal__overlay">
+          <div className="c-wizard">
             <div className={this.state.wizardStep === 6 ? `c-wizard__current-${this.state.wizardDir}` : `c-wizard__standby-${this.state.wizardDir}`} aria-hidden={this.state.wizardStep === 6 ? null : true}>
               <WizardLinkComp goBackward = {this.goBackward} closeModal={this.handleCloseModal} />
             </div>

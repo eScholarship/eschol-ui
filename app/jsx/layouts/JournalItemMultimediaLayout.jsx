@@ -30,7 +30,7 @@ class JournalItemMultimediaLayout extends React.Component {
           </ul>
         </nav>
         <div className="c-columns--sticky-sidebar">
-          <main id="maincontent">
+          <main id="maincontent" tabIndex="-1">
             <div className="c-itemactions">
               <div className="o-download">
                 <a href="" className="o-download__button" download>Download PDF</a>

@@ -20,11 +20,11 @@ class ScholWorksComp extends React.Component {
             <li className={'c-scholworks__tag-' + this.props.type}>{this.props.type}</li>
             <li className="c-scholworks__tag-peer">Peer Reviewed</li>
           </ul>
-          <heading>
+          <div>
             <h2 className="c-scholworks__heading">
               <a href="">{faker.fake("{{lorem.sentence}}")}</a>
             </h2 >
-          </heading>
+          </div>
           <AuthorListComp />
           <div className="c-scholworks__publication">
             <a href="">{faker.fake("{{commerce.department}}")} Journal, Volume 42, Issue 1</a> (2012)

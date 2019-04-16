@@ -84,7 +84,7 @@ class BrowseDepartmentsLayout extends React.Component {
           </ul>
         </nav>
         <div className="c-columns">
-          <main id="maincontent">
+          <main id="maincontent" tabIndex="-1">
             <section className="o-columnbox1">
               <header>
                 <h2>Academic Units</h2>

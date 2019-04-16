@@ -63,7 +63,7 @@ class SeriesItemUrlLayout extends React.Component {
           </ul>
         </nav>
         <div className="c-columns">
-          <main id="maincontent">
+          <main id="maincontent" tabIndex="-1">
             <div className="c-tabs">
               <div className="c-tabs__tabs">
                 <button className="c-tabs__button--active">Main Content</button>

@@ -61,6 +61,11 @@ class WizardCampusComp extends React.Component {
             <a href="">UC Agriculture and Natural Resources</a>
           </li>
         </ul>
+        <ul className="c-wizard__list-black">
+          <li>
+            <a href="">Explore additional deposit options</a>
+          </li>
+        </ul>
         <footer>
           We use these questions to direct you to the right place to deposit your materials.
         </footer>

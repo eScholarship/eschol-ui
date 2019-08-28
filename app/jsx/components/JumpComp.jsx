@@ -26,8 +26,17 @@ class JumpComp extends React.Component {
         <div className="c-jump">
           <a id="c-jump__label" href="">Article</a>
           <ul className="c-jump__tree" aria-labelledby="c-jump__label">
-            <li><a href="">Abstract</a></li>
-            <li><a href="">Main Content</a></li>
+            <li><a href="">Introduction</a></li>
+            <li><a href="">Chapter 1. sdkfjh kajhdf lkasjhd flkjsahdf klh</a></li>
+            <li><a href="">Chapter 2. skdjfhkl sdajh iwur iouhkasj</a></li>
+            <li><a href="">Chapter 3. oiu123iu saoihaosiduyfoi wueyr ksa</a></li>
+            <li><a href="">Chapter 4. opi9u iuh 2 39812 skljnkajs iuh23opi 4kjhsfalkhj</a></li>
+            <li><a href="">Chapter 5. iusiou h1iuskdhjka pu aiudfh iwaher liuhs</a></li>
+            <li><a href="">Chapter 6. skjh iuiuwq er ishdf</a></li>
+            <li><a href="">Chapter 7. kjshiu 32ihu i fsalkjdfh</a></li>
+            <li><a href="">Conclusion</a></li>
+            <li><a href="">Appendix A. skdayfip ualihfsadjfh</a></li>
+            <li><a href="">Appendix B. LKjfhdg kadsklfjh asdihfihu</a></li>
             <li><a href="">References</a></li>
             <li><a href="">Author Response</a></li>
           </ul>

@@ -90,15 +90,15 @@ class HomeLayout extends React.Component {
           </section>
           <section className="c-homesection">
             <header>
-              <h2>eScholarship is the institutional repository for the UC system</h2>
-            </header>
-            <HomeSection2Comp />
-          </section>
-          <section className="c-homesection">
-            <header>
               <h2>eScholarship is also an open access publishing platform</h2>
             </header>
             <HomeSection3Comp />
+          </section>
+          <section className="c-homesection">
+            <header>
+              <h2>eScholarship is the institutional repository for the UC system</h2>
+            </header>
+            <HomeSection2Comp />
           </section>
         </main>
         <div className="c-toplink">

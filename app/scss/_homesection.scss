@@ -251,24 +251,10 @@
   grid-template-columns: 1fr;
 
   @include bp(screen3) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
-
-.c-homesection__3-description {
-
-  @include bp(screen3) {
-    align-self: center;
-    grid-column: 1 / 3;
-  }
-
-}
-
-/* in HTML but not styled:
-.c-homesection__3-journalgrid {
-}
-*/
 
 .c-homesection__3-link {
   @extend %c-homesection__link;

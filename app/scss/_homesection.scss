@@ -111,7 +111,7 @@
 
   @include bp(screen3) {
     background: url('#{$media-path}world-map-teal.svg') no-repeat center / contain;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto 1fr auto;
   }
 
@@ -149,10 +149,10 @@
 
 .c-homesection__2 {
   @extend %c-homesection__grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 
   @include bp(screen3) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .o-stat {
@@ -192,7 +192,7 @@
   justify-self: center;
 
   @include bp(screen3) {
-    grid-column: 3 / 4;
+    grid-column: 3;
   }
 
 }
@@ -203,7 +203,7 @@
   grid-column: 2;
 
   @include bp(screen3) {
-    grid-column: 4 / 5;
+    grid-column: 4;
   }
 
 }

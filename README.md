@@ -25,7 +25,7 @@ This repository contains all UI elements for the eScholarship website. It serves
 
 * Run `$ npm run build` to create a finished build of the UI Library. This creates a **/dist** directory with all files optimized for deployment and integration.
 
-* Run `$ npm run deploy` to publish a finished build to GitHub Pages (currently at: [https://cdlib.github.io/eschol-ui](https://cdlib.github.io/eschol-ui)). This feature may require that GitHub Pages is [configured](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) on your GitHub account.
+* Run `$ npm run deploy` to publish a finished build to GitHub Pages ([https://escholarship.github.io/eschol-ui](https://escholarship.github.io/eschol-ui)). This feature requires that GitHub Pages is [configured](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) to this repository's **gh-pages** branch.
 
 ## Getting Familiar with the Library's Assets
 

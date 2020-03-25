@@ -13,6 +13,8 @@ class JournalInfoComp extends React.Component {
           <li><b>e-ISSN-</b> 0160-2764</li>
           <li><b>e-ISSN-</b> 0160-2765</li>
         </ul>
+        <p><a href=''>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ</a>
+        </p>
       </div>
     )
   }

@@ -9,9 +9,9 @@ class SubheaderDisp extends React.Component {
     return (
       <div>
         <h2>Subheader Using Wide Banner</h2>
-        <SubheaderComp banner={MEDIA_PATH + 'temp_journal-banner.png'} wide={true} />
+        <SubheaderComp unitTitle={'Western Journal of Emergency Medicine'} banner={MEDIA_PATH + 'temp_journal-banner.png'} wide={true} />
         <h2>Subheader Using Narrow Banner</h2>
-        <SubheaderComp banner={'https://escholarship.org/assets/ebadc9294e27ce4df7a7391de182d062a094d4a0ff94c8fd7ca8b212fcd85541'} wide={false} />
+        <SubheaderComp unitTitle={'Information Center for the Environment'} banner={'https://escholarship.org/assets/ebadc9294e27ce4df7a7391de182d062a094d4a0ff94c8fd7ca8b212fcd85541'} wide={false} />
       </div>
     )
   }

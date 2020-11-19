@@ -32,8 +32,8 @@ class SubheaderComp extends React.Component {
           </details>
         </div>
         <a className={this.props.wide ? "c-subheader__banner--wide" : "c-subheader__banner--narrow"} href="">
-          <h1>Western Journal of Emergency Medicine</h1>
-          <img src={this.props.banner} alt="Western Journal of Emergency Medicine"/>
+          <h1>{this.props.unitTitle}</h1>
+          <img src={this.props.banner} alt={this.props.unitTitle} />
         </a>
         <div className="c-subheader__sidebar">
           <button className="o-button__3">Submit</button>

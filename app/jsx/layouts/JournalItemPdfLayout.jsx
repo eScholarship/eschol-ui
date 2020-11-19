@@ -3,6 +3,7 @@
 import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
 import SubheaderComp from '../components/SubheaderComp.jsx'
+import MEDIA_PATH from '../../js/MediaPath.js'
 import NavBarComp from '../components/NavBarComp.jsx'
 import ItemActionsComp from '../components/ItemActionsComp.jsx'
 import AuthorListComp from '../components/AuthorListComp.jsx'
@@ -18,7 +19,7 @@ class JournalItemPdfLayout extends React.Component {
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
-        <SubheaderComp />
+        <SubheaderComp unitTitle={'Information Center for the Environment'} banner={'https://escholarship.org/assets/ebadc9294e27ce4df7a7391de182d062a094d4a0ff94c8fd7ca8b212fcd85541'} wide={false} />
         <NavBarComp />
         <nav className="c-breadcrumb">
           <ul>

@@ -2,6 +2,8 @@
 
 import React from 'react'
 import Header2Comp from '../components/Header2Comp.jsx'
+import SubheaderComp from '../components/SubheaderComp.jsx'
+import MEDIA_PATH from '../../js/MediaPath.js'
 import NavBarComp from '../components/NavBarComp.jsx'
 import IssueComp from '../components/IssueComp.jsx'
 import MediaListComp from '../components/MediaListComp.jsx'
@@ -38,41 +40,7 @@ class JournalSimpleLayout extends React.Component {
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
-        <div className="c-subheader">
-          <div className="o-customselector--campus">
-            <div className="o-customselector__heading">
-              <a href="">UC Berkeley</a>
-            </div>
-            <details className="o-customselector__selector">
-              <summary aria-label="Select a different item"></summary>
-              <div className="o-customselector__menu">
-                <div className="o-customselector__sub-heading" id="o-customselector__sub-heading">eScholarship at &hellip;</div>
-                <ul className="o-customselector__items">
-                  <li><a href="">UC Berkeley</a></li>
-                  <li><a href="">UC Davis</a></li>
-                  <li><a href="">UC Irvine</a></li>
-                  <li><a href="">UCLA</a></li>
-                  <li><a href="">UC Merced</a></li>
-                  <li><a href="">UC Riverside</a></li>
-                  <li><a href="">UC San Diego</a></li>
-                  <li><a href="">UC San Francisco</a></li>
-                  <li><a href="">UC Santa Barbara</a></li>
-                  <li><a href="">UC Santa Cruz</a></li>
-                  <li><a href="">UC Office of the President</a></li>
-                  <li><a href="">UC Press</a></li>
-                </ul>
-              </div>
-            </details>
-          </div>
-          <a className="c-subheader__banner--narrow" href="">
-            <h1>Room One Thousand</h1>
-            <img src="http://pub-jschol-stg.escholarship.org/assets/cc6500b061f865f6dd015fefc1100ea989a5442b2e65f11e48d83c7d69a98610" alt="logo for Room One Thousand"/>
-          </a>
-          <div className="c-subheader__sidebar">
-            <button className="o-button__3">Submit</button>
-            <button className="o-button__3">Manage <span className="c-subheader__button-fragment">Submissions</span></button>
-          </div>
-        </div>
+        <SubheaderComp unitTitle={'Information Center for the Environment'} banner={'https://escholarship.org/assets/ebadc9294e27ce4df7a7391de182d062a094d4a0ff94c8fd7ca8b212fcd85541'} wide={false} />
         <NavBarComp />
         <nav className="c-breadcrumb">
           <ul>

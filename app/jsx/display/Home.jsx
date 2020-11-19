@@ -43,7 +43,7 @@ class Home extends React.Component {
           <li><a href="#alert">Alerts</a></li>
           <li><a href="#button">Buttons</a></li>
           <li><a href="#columnbox">Column Boxes</a></li>
-          <li><a href="#customselector">Custom Selectors</a></li>
+          <li><a href="#customselector">Custom Selector</a></li>
           <li><a href="#dividecontent">Divide Content into Balanced Columms</a></li>
           <li><a href="#download">Download</a></li>
           <li><a href="#heading">Headings</a></li>

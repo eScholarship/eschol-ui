@@ -3,6 +3,7 @@
 import React from 'react'
 import $ from 'jquery'
 import Header2Comp from '../components/Header2Comp.jsx'
+import SubheaderComp from '../components/SubheaderComp.jsx'
 import NavBarComp from '../components/NavBarComp.jsx'
 import ShareComp from '../components/ShareComp.jsx'
 import UnitSeriesComp from '../components/UnitSeriesComp.jsx'
@@ -59,41 +60,7 @@ class UnitSimpleLayout extends React.Component {
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
-        <div className="c-subheader">
-          <div className="o-customselector--campus">
-            <div className="o-customselector__heading">
-              <a href="">UC Riverside</a>
-            </div>
-            <details className="o-customselector__selector">
-              <summary aria-label="Select a different item"></summary>
-              <div className="o-customselector__menu">
-                <div className="o-customselector__sub-heading" id="o-customselector__sub-heading">eScholarship at &hellip;</div>
-                <ul className="o-customselector__items">
-                  <li><a href="">UC Berkeley</a></li>
-                  <li><a href="">UC Davis</a></li>
-                  <li><a href="">UC Irvine</a></li>
-                  <li><a href="">UCLA</a></li>
-                  <li><a href="">UC Merced</a></li>
-                  <li><a href="">UC Riverside</a></li>
-                  <li><a href="">UC San Diego</a></li>
-                  <li><a href="">UC San Francisco</a></li>
-                  <li><a href="">UC Santa Barbara</a></li>
-                  <li><a href="">UC Santa Cruz</a></li>
-                  <li><a href="">UC Office of the President</a></li>
-                  <li><a href="">UC Press</a></li>
-                </ul>
-              </div>
-            </details>
-          </div>
-          <a className="c-subheader__banner--wide" href="">
-            <h1>UC Riverside</h1>
-            <img src={MEDIA_PATH + 'logo_ucr.svg'} alt="UC Riverside logo"/>
-          </a>
-          <div className="c-subheader__sidebar">
-            <button className="o-button__3">Deposit</button>
-            <button className="o-button__3">Manage <span className="c-subheader__button-fragment">Submissions</span></button>
-          </div>
-        </div>
+        <SubheaderComp unitTitle={'Western Journal of Emergency Medicine'} banner={MEDIA_PATH + 'temp_journal-banner.png'} wide={true}/>
         <div className="c-navbar">
           <nav className="c-nav">
             <details open={this.state.isOpen ? "open" : ""} className="c-nav__main" ref={(domNode)=> this.details = domNode}>

@@ -11,7 +11,7 @@ class SubheaderComp extends React.Component {
           <img src={this.props.banner} alt={this.props.unitTitle} />
         </a>
         <div className="c-subheader__sidebar">
-          <button className="o-button__3">Submit</button>
+          <button className="o-button__3">{this.props.isDept ? "Deposit" : "Submit"}</button>
           <button className="o-button__3">Manage <span className="c-subheader__button-fragment">Submissions</span></button>
         </div>
       </div>

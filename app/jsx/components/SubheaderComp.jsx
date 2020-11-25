@@ -8,7 +8,7 @@ class SubheaderComp extends React.Component {
       <div className="c-subheader">
         <a className={this.props.wide ? "c-subheader__banner--wide" : "c-subheader__banner--narrow"} href="">
           <h1>{this.props.unitTitle}</h1>
-          {this.props.banner && <img src={this.props.banner} alt={this.props.unitTitle} /> }
+          {this.props.banner && <img src={this.props.banner} alt={this.props.unitTitle + ' banner'} /> }
         </a>
         <div className="c-subheader__sidebar">
           <button className="o-button__3">{this.props.isDept ? "Deposit" : "Submit"}</button>

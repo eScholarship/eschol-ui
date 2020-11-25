@@ -17,7 +17,7 @@ class SeriesItemWithdrawnLayout extends React.Component {
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
-        <SubheaderComp unitTitle={'Western Journal of Emergency Medicine'} banner={MEDIA_PATH + 'temp_journal-banner.png'} wide={true}/>
+        <SubheaderComp unitTitle={'Bay Area International Group'} isDept={true} wide={false} />
         <NavBarComp />
         <nav className="c-breadcrumb">
           <ul>

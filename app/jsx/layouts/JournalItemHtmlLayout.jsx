@@ -19,7 +19,7 @@ class JournalItemHtmlLayout extends React.Component {
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
-        <SubheaderComp unitTitle={'Information Center for the Environment'} banner={'https://escholarship.org/assets/ebadc9294e27ce4df7a7391de182d062a094d4a0ff94c8fd7ca8b212fcd85541'} wide={false} />
+        <SubheaderComp unitTitle={'Berkeley Undergraduate Journal of Classics'} banner={'https://escholarship.org/assets/c6efb9a478093370f05eb67c08b132b74570d848571548c3a320c213183ff1dd'} wide={false} />
         <NavBarComp />
         <nav className="c-breadcrumb">
           <ul>

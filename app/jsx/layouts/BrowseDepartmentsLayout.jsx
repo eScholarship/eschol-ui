@@ -29,7 +29,7 @@ class BrowseDepartmentsLayout extends React.Component {
       <div>
       <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
-        <SubheaderComp unitTitle={'Western Journal of Emergency Medicine'} banner={MEDIA_PATH + 'temp_journal-banner.png'} isWide={true}/>
+        <SubheaderComp unitTitle={'Western Journal of Emergency Medicine'} bannerUrl={MEDIA_PATH + 'temp_journal-banner.png'} isWide={true}/>
         <div className="c-navbar">
           <nav className="c-nav">
             <details open={this.state.isOpen ? "open" : ""} className="c-nav__main">

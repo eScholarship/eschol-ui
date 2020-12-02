@@ -19,7 +19,7 @@ class JournalItemPdfLayout extends React.Component {
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
-        <SubheaderComp unitTitle={'Berkeley Papers in Formal Linguistics'} wide={false} />
+        <SubheaderComp unitTitle={'Berkeley Papers in Formal Linguistics'} isWide={false} />
         <NavBarComp />
         <nav className="c-breadcrumb">
           <ul>

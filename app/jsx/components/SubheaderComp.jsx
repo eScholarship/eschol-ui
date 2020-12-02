@@ -6,7 +6,7 @@ class SubheaderComp extends React.Component {
   render() {
     return (
       <div className="c-subheader">
-        <a className={this.props.isWide ? "c-subheader__banner--wide" : "c-subheader__banner--narrow"} href="">
+        <a className={this.props.isWide ? "c-subheader__banner--wide" : "c-subheader__banner--narrow"} href={this.props.bannerLink}>
           <h1>{this.props.unitTitle}</h1>
           {this.props.bannerUrl && <img src={this.props.bannerUrl} alt={this.props.unitTitle + ' banner'} /> }
         </a>

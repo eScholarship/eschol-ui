@@ -19,7 +19,7 @@ class JournalItemMultimediaLayout extends React.Component {
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
-        <SubheaderComp unitTitle={'Berkeley Undergraduate Journal of Classics'} bannerUrl={'https://escholarship.org/assets/c6efb9a478093370f05eb67c08b132b74570d848571548c3a320c213183ff1dd'} isWide={false} />
+        <SubheaderComp bannerLink={'https://escholarship.org/uc/ucbclassics_bujc'} unitTitle={'Berkeley Undergraduate Journal of Classics'} bannerUrl={'https://escholarship.org/assets/c6efb9a478093370f05eb67c08b132b74570d848571548c3a320c213183ff1dd'} isWide={false} />
         <NavBarComp />
         <nav className="c-breadcrumb">
           <ul>

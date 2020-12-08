@@ -60,7 +60,7 @@ class UnitSimpleLayout extends React.Component {
       <div>
         <a href="#maincontent" className="c-skipnav">Skip to main content</a>
         <Header2Comp />
-        <SubheaderComp unitTitle={'Archaeological Research Facility'} isDept={true} bannerUrl={'https://escholarship.org/assets/f5bae7cdd66fe7d61508583785f181d93795ad7170e3fa573537ef06d51f4eb2'} isWide={true} />
+        <SubheaderComp bannerLink={'https://escholarship.org/uc/arf'} unitTitle={'Archaeological Research Facility'} isDept={true} bannerUrl={'https://escholarship.org/assets/f5bae7cdd66fe7d61508583785f181d93795ad7170e3fa573537ef06d51f4eb2'} isWide={true} />
         <div className="c-navbar">
           <nav className="c-nav">
             <details open={this.state.isOpen ? "open" : ""} className="c-nav__main" ref={(domNode)=> this.details = domNode}>

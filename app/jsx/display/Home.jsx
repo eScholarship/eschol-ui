@@ -65,6 +65,7 @@ class Home extends React.Component {
           <li><a href="#campushero">Campus Hero</a></li>
           <li><a href="#campussearch">Campus Search</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
+          <li><a href="#colorpicker">Color Picker</a></li>
           <li><a href="#columns">Columns Layout</a></li>
           <li><a href="#datatable">Data Table</a></li>
           <li><a href="#daterange">Date Range</a></li>

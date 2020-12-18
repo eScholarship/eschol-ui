@@ -13,6 +13,18 @@
   @include bp(screen4) {
     padding: $spacing-sm $spacing-lg;
   }
+
+  &.is-darkgray {
+    color: $color-dark-gray;
+  }
+
+  &.is-black {
+    color: $color-black;
+  }
+
+  &.is-white {
+    color: $color-white;
+  }
 }
 
 .c-subheader__title {
@@ -103,6 +115,10 @@
   }
 
   button {
+    @extend %o-button;
+    border: 1px solid currentColor;
+    box-shadow: $box-shadow2;
+    color: currentColor;
 
     &:not(:first-child) {
       margin-top: 2px;

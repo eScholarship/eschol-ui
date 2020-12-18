@@ -4,7 +4,7 @@ import React from 'react'
 
 function SubheaderComp (props) {
   return (
-    <div className={`c-subheader ${props.bannerUrl ? "has-banner" : ""} ${props.isWide ? "is-wide" : ""} ${props.campusLabel ? "has-campus-label" : ""}`} style={{backgroundColor: props.backgroundColor}}>
+    <div className={`c-subheader ${props.bannerUrl ? "has-banner" : ""} ${props.isWide ? "is-wide" : ""} ${props.campusLabel ? "has-campus-label" : ""} is-${props.buttonColor ? props.buttonColor : "darkgray"}`} style={{backgroundColor: props.backgroundColor}}>
       <a className="c-subheader__title" href={props.bannerLink}>
         <h1>{props.unitTitle}</h1>
       </a>
@@ -14,8 +14,8 @@ function SubheaderComp (props) {
       {props.campusLabel && <a className="c-subheader__campus" href={props.campusLink}>{props.campusLabel}
       </a> }
       <div className="c-subheader__buttons">
-        <button className="o-button__3">{props.isDept ? "Deposit" : "Submit"}</button>
-        <button className="o-button__3">Manage <span className="c-subheader__button-fragment">Submissions</span></button>
+        <button type="button">{props.isDept ? "Deposit" : "Submit"}</button>
+        <button type="button">Manage <span className="c-subheader__button-fragment">Submissions</span></button>
       </div>
     </div>
   )

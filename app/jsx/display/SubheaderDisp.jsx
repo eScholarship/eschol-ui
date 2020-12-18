@@ -3,16 +3,19 @@
 import React, { useState } from 'react'
 import SubheaderComp from '../components/SubheaderComp.jsx'
 import ColorPickerComp from '../components/ColorPickerComp.jsx'
+import ButtonPickerComp from '../components/ButtonPickerComp.jsx'
 import MEDIA_PATH from '../../js/MediaPath.js'
 
 function SubheaderDisp () {
   const [color, setColor] = useState('#ffffff')
+  const [button, setButton] = useState('darkgray')
 
   return (
     <div>
       <h2>Journal Subheader Using Wide Banner</h2>
       <ColorPickerComp color={color} onColorChange={setColor} />
-      <SubheaderComp backgroundColor={color} bannerLink={'https://escholarship.org/uc/uciem_westjem'} unitTitle={'Western Journal of Emergency Medicine'} bannerUrl={MEDIA_PATH + 'temp_journal-banner.png'} isWide={true} />
+      <ButtonPickerComp onButtonChange={setButton} isDefault={button} />
+      <SubheaderComp backgroundColor={color} buttonColor={button} bannerLink={'https://escholarship.org/uc/uciem_westjem'} unitTitle={'Western Journal of Emergency Medicine'} bannerUrl={MEDIA_PATH + 'temp_journal-banner.png'} isWide={true} />
       <h2>Journal Subheader Using Wide Banner With Campus Label</h2>
       <SubheaderComp bannerLink={'https://escholarship.org/uc/uciem_westjem'} unitTitle={'Western Journal of Emergency Medicine'} bannerUrl={MEDIA_PATH + 'temp_journal-banner.png'} isWide={true} campusLabel={'UC Irvine'} campusLink={'https://escholarship.org/uc/uci'} />
       <h2>Journal Subheader Using Small Logo + Typeset Title</h2>

@@ -1,0 +1,17 @@
+// ##### Button Picker Component ##### //
+
+.c-buttonpicker {
+  display: inline-flex;
+
+  legend {
+    font-weight: bold;
+  }
+
+  input {
+    margin-right: 5px;
+  }
+
+  label {
+    margin-right: $spacing-md;
+  }
+}

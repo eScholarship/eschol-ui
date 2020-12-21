@@ -61,7 +61,6 @@ class Home extends React.Component {
         <ul>
           <li><a href="#authorlist">Author List</a></li>
           <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
-          <li><a href="#buttonpicker">Button Picker</a></li>
           <li><a href="#campuscarouselframe">Campus Carousel Frame</a></li>
           <li><a href="#campushero">Campus Hero</a></li>
           <li><a href="#campussearch">Campus Search</a></li>
@@ -71,6 +70,7 @@ class Home extends React.Component {
           <li><a href="#datatable">Data Table</a></li>
           <li><a href="#daterange">Date Range</a></li>
           <li><a href="#descriptionlist">Description List</a></li>
+          <li><a href="#elementcolorpicker">Element Color Picker</a></li>
           <li><a href="#export">Export/RSS</a></li>
           <li><a href="#facetbox">Facet Box</a></li>
           <li><a href="#filter">Filter</a></li>

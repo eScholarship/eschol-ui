@@ -32,7 +32,6 @@ import BrowseCampusesLayout from './layouts/BrowseCampusesLayout.jsx'
 import BrowseDepartmentsLayout from './layouts/BrowseDepartmentsLayout.jsx'
 import BrowseJournalsLayout from './layouts/BrowseJournalsLayout.jsx'
 import ButtonDisp from './display/ButtonDisp.jsx'
-import ButtonPickerDisp from './display/ButtonPickerDisp.jsx'
 import CampusLayout from './layouts/CampusLayout.jsx'
 import CampusCarouselFrameDisp from './display/CampusCarouselFrameDisp.jsx'
 import CampusHeroDisp from './display/CampusHeroDisp.jsx'
@@ -47,6 +46,7 @@ import DateRangeDisp from './display/DateRangeDisp.jsx'
 import DescriptionListDisp from './display/DescriptionListDisp.jsx'
 import DivideContentDisp from './display/DivideContentDisp.jsx'
 import DownloadDisp from './display/DownloadDisp.jsx'
+import ElementColorPickerDisp from './display/ElementColorPickerDisp.jsx'
 import Error404Layout from './layouts/Error404Layout.jsx'
 import ExportDisp from './display/ExportDisp.jsx'
 import FacetBoxDisp from './display/FacetBoxDisp.jsx'
@@ -164,7 +164,6 @@ class App extends React.Component {
           <Route path="/campushero" component={CampusHeroDisp} />
           <Route path="/campussearch" component={CampusSearchDisp} />
           <Route path="/button" component={ButtonDisp} />
-          <Route path="/buttonpicker" component={ButtonPickerDisp} />
           <Route path="/checkbox" component={CheckboxDisp} />
           <Route path="/columnbox" component={ColumnBoxDisp} />
           <Route path="/colorpicker" component={ColorPickerDisp} />
@@ -175,6 +174,7 @@ class App extends React.Component {
           <Route path="/descriptionlist" component={DescriptionListDisp} />
           <Route path="/dividecontent" component={DivideContentDisp} />
           <Route path="/download" component={DownloadDisp} />
+          <Route path="/elementcolorpicker" component={ElementColorPickerDisp} />
           <Route path="/error404" component={Error404Layout} />
           <Route path="/export" component={ExportDisp} />
           <Route path="/input" component={InputDisp} />

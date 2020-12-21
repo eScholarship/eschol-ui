@@ -1,3 +1,17 @@
 // ##### Subheader Controls Component ##### //
 
-// no styles
+.c-subheadercontrols {
+
+  .c-colorpicker {
+    display: flex;
+    margin-bottom: $spacing-md;
+  }
+
+  .c-elementcolorpicker {
+    margin-bottom: $spacing-md;
+  }
+
+  .c-subheader {
+    margin: 0;
+  }
+}

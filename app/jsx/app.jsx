@@ -112,6 +112,7 @@ import SortPaginationDisp from './display/SortPaginationDisp.jsx'
 import StatCarouselDisp from './display/StatCarouselDisp.jsx'
 import StatsDisp from './display/StatsDisp.jsx'
 import SubheaderDisp from './display/SubheaderDisp.jsx'
+import SubheaderControlsDisp from './display/SubheaderControlsDisp.jsx'
 import TabMainDisp from './display/TabMainDisp.jsx'
 import TabSupplementalDisp from './display/TabSupplementalDisp.jsx'
 import TabMetricsDisp from './display/TabMetricsDisp.jsx'
@@ -239,6 +240,7 @@ class App extends React.Component {
           <Route path="/statcarousel" component={StatCarouselDisp} />
           <Route path="/stats" component={StatsDisp} />
           <Route path="/subheader" component={SubheaderDisp} />
+          <Route path="/subheadercontrols" component={SubheaderControlsDisp} />
           <Route path="/tabmain" component={TabMainDisp} />
           <Route path="/tabsupplemental" component={TabSupplementalDisp} />
           <Route path="/tabmetrics" component={TabMetricsDisp} />

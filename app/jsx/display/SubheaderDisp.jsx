@@ -1,21 +1,14 @@
 // ##### Subheader Display ##### //
 
-import React, { useState } from 'react'
+import React from 'react'
 import SubheaderComp from '../components/SubheaderComp.jsx'
-import ColorPickerComp from '../components/ColorPickerComp.jsx'
-import ElementColorPickerComp from '../components/ElementColorPickerComp.jsx'
 import MEDIA_PATH from '../../js/MediaPath.js'
 
 function SubheaderDisp () {
-  const [bgColor, setBgColor] = useState('#ffffff')
-  const [elColor, setElColor] = useState('darkgray')
-
   return (
     <div>
       <h2>Journal Subheader Using Wide Banner</h2>
-      <ColorPickerComp backgroundColor={bgColor} onBackgroundColorChange={setBgColor} />
-      <ElementColorPickerComp onElementColorChange={setElColor} isDefault={elColor} />
-      <SubheaderComp backgroundColor={bgColor} elementColor={elColor} bannerLink={'https://escholarship.org/uc/uciem_westjem'} unitTitle={'Western Journal of Emergency Medicine'} bannerUrl={MEDIA_PATH + 'temp_journal-banner.png'} isWide={true} />
+      <SubheaderComp bannerLink={'https://escholarship.org/uc/uciem_westjem'} unitTitle={'Western Journal of Emergency Medicine'} bannerUrl={MEDIA_PATH + 'temp_journal-banner.png'} isWide={true} />
       <h2>Journal Subheader Using Wide Banner With Campus Label</h2>
       <SubheaderComp bannerLink={'https://escholarship.org/uc/uciem_westjem'} unitTitle={'Western Journal of Emergency Medicine'} bannerUrl={MEDIA_PATH + 'temp_journal-banner.png'} isWide={true} campusLabel={'UC Irvine'} campusLink={'https://escholarship.org/uc/uci'} />
       <h2>Journal Subheader Using Small Logo + Typeset Title</h2>

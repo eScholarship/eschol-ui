@@ -117,6 +117,7 @@ class Home extends React.Component {
           <li><a href="#sortpagination">Sort Pagination</a></li>
           <li><a href="#statcarousel">Statistics Carousel</a></li>
           <li><a href="#subheader">Subheader</a></li>
+          <li><a href="#subheadercontrols">Subheader Controls</a></li>
           <li><a href="#tabs">Tabs (stable)</a></li>
           <li><a href="#tabs2">Tabs v.2 (experimental only)</a></li>
           <li><a href="#tabmain">Tab - Main</a></li>

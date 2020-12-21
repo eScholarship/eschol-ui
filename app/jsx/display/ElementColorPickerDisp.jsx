@@ -8,7 +8,7 @@ function ElementColorPickerDisp () {
 
   return (
     <div>
-      <ElementColorPickerComp onElementColorChange={setElColor} isDefault={elColor} />
+      <ElementColorPickerComp fieldsetLabel="Element Color" onElementColorChange={setElColor} isDefault={elColor} />
       <div>Checkbox value is "{elColor}"</div>
     </div>
   )

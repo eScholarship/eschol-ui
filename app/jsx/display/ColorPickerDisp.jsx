@@ -15,8 +15,8 @@ function ColorPickerDisp () {
 
   return (
     <div>
-      <ColorPickerComp bgColor={bgColor} onBackgroundColorChange={setBgColor} />
-      <div style={styles}>(example of how the subheader comp background color is changed)</div>
+      <ColorPickerComp textLabel="Background Color" bgColor={bgColor} onBackgroundColorChange={setBgColor} />
+      <div style={styles}>(example of how the background color is changed)</div>
     </div>
   )
 }

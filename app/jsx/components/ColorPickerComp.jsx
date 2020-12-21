@@ -9,7 +9,7 @@ function ColorPickerComp (props) {
 
   return (
     <div className="c-colorpicker">
-      <label htmlFor="subheader-colorpicker">Choose Subheader Background Color:</label>
+      <label htmlFor="subheader-colorpicker">{props.textLabel}:</label>
       <input id="subheader-colorpicker" type="color" value={props.backgroundColor} onChange={handleChange} />
     </div>
   )

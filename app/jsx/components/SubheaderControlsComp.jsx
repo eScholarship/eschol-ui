@@ -11,8 +11,8 @@ function SubheaderControlsComp () {
 
   return (
     <div className="c-subheadercontrols">
-      <ColorPickerComp backgroundColor={bgColor} onBackgroundColorChange={setBgColor} />
-      <ElementColorPickerComp onElementColorChange={setElColor} isDefault={elColor} />
+      <ColorPickerComp textLabel="Subheader Background Color" backgroundColor={bgColor} onBackgroundColorChange={setBgColor} />
+      <ElementColorPickerComp fieldsetLabel="Subheader Element Color" onElementColorChange={setElColor} isDefault={elColor} />
       <SubheaderComp backgroundColor={bgColor} elementColor={elColor} bannerLink={'https://escholarship.org/uc/bling_formal_linguistics'} unitTitle={'Lorem Ipsum Consectetur Adipisicing Elit'} isWide={false} campusLabel={'UC Berkeley'} campusLink={'https://escholarship.org/uc/ucb'} />
     </div>
   )

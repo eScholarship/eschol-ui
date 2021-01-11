@@ -7,7 +7,7 @@ import SubheaderComp from '../components/SubheaderComp.jsx'
 
 function SubheaderControlsComp () {
   const [bgColor, setBgColor] = useState('#ffffff')
-  const [elColor, setElColor] = useState('darkgray')
+  const [elColor, setElColor] = useState('black')
 
   return (
     <div className="c-subheadercontrols">

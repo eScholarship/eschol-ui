@@ -4,7 +4,7 @@ import React from 'react'
 
 function SubheaderComp (props) {
   return (
-    <div className={`c-subheader ${props.bannerUrl ? "has-banner" : ""} ${props.isWide ? "is-wide" : ""} ${props.campusLabel ? "has-campus-label" : ""} is-${props.elementColor ? props.elementColor : "darkgray"}`} style={{backgroundColor: props.backgroundColor}}>
+    <div className={`c-subheader ${props.bannerUrl ? "has-banner" : ""} ${props.isWide ? "is-wide" : ""} ${props.campusLabel ? "has-campus-label" : ""} is-${props.elementColor ? props.elementColor : "black"}`} style={{backgroundColor: props.backgroundColor}}>
       <a className="c-subheader__title" href={props.bannerLink}>
         <h1>{props.unitTitle}</h1>
       </a>

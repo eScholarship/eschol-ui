@@ -10,8 +10,6 @@ function ElementColorComp (props) {
   return (
     <fieldset className="c-elementcolorpicker" onChange={handleChange}>
       <legend>{props.fieldsetLabel}</legend>
-      <input id="elementcolorpicker-gray" type="radio" name="elementcolorpicker" value="darkgray" defaultChecked={props.isDefault === 'darkgray' ? true : false} />
-      <label htmlFor="elementcolorpicker-gray">Dark Gray</label>
       <input id="elementcolorpicker-black" type="radio" name="elementcolorpicker" value="black" defaultChecked={props.isDefault === 'black' ? true : false} />
       <label htmlFor="elementcolorpicker-black">Black</label>
       <input id="elementcolorpicker-white" type="radio" name="elementcolorpicker" value="white" defaultChecked={props.isDefault === 'white' ? true : false} />

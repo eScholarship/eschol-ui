@@ -60,12 +60,12 @@ class Home extends React.Component {
         <h2>Components</h2>
         <ul>
           <li><a href="#authorlist">Author List</a></li>
+          <li><a href="#backgroundcolorpicker">Background Color Picker</a></li>
           <li><a href="#breadcrumb">Breadcrumb Navigation</a></li>
           <li><a href="#campuscarouselframe">Campus Carousel Frame</a></li>
           <li><a href="#campushero">Campus Hero</a></li>
           <li><a href="#campussearch">Campus Search</a></li>
           <li><a href="#checkbox">Checkbox</a></li>
-          <li><a href="#colorpicker">Color Picker</a></li>
           <li><a href="#columns">Columns Layout</a></li>
           <li><a href="#datatable">Data Table</a></li>
           <li><a href="#daterange">Date Range</a></li>

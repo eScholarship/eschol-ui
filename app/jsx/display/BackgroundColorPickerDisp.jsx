@@ -1,9 +1,9 @@
-// ##### Color Picker Display ##### //
+// ##### Background Color Picker Display ##### //
 
 import React, { useState } from 'react'
-import ColorPickerComp from '../components/ColorPickerComp.jsx'
+import BackgroundColorPickerComp from '../components/BackgroundColorPickerComp.jsx'
 
-function ColorPickerDisp () {
+function BackgroundColorPickerDisp () {
   const [bgColor, setBgColor] = useState('#ffffff')
   const styles = {
     display: 'flex',
@@ -15,10 +15,10 @@ function ColorPickerDisp () {
 
   return (
     <div>
-      <ColorPickerComp textLabel="Background Color" bgColor={bgColor} onBackgroundColorChange={setBgColor} />
+      <BackgroundColorPickerComp textLabel="Background Color" bgColor={bgColor} onBackgroundColorChange={setBgColor} />
       <div style={styles}>(example of how the background color is changed)</div>
     </div>
   )
 }
 
-module.exports = ColorPickerDisp;
+module.exports = BackgroundColorPickerDisp;

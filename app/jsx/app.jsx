@@ -27,6 +27,7 @@ import '../../node_modules/flickity/dist/flickity.min.css'
 import AboutLayout from './layouts/AboutLayout.jsx'
 import AlertDisp from './display/AlertDisp.jsx'
 import AuthorListDisp from './display/AuthorListDisp.jsx'
+import BackgroundColorPickerDisp from './display/BackgroundColorPickerDisp.jsx'
 import BreadcrumbDisp from './display/BreadcrumbDisp.jsx'
 import BrowseCampusesLayout from './layouts/BrowseCampusesLayout.jsx'
 import BrowseDepartmentsLayout from './layouts/BrowseDepartmentsLayout.jsx'
@@ -36,7 +37,6 @@ import CampusLayout from './layouts/CampusLayout.jsx'
 import CampusCarouselFrameDisp from './display/CampusCarouselFrameDisp.jsx'
 import CampusHeroDisp from './display/CampusHeroDisp.jsx'
 import CampusSearchDisp from './display/CampusSearchDisp.jsx'
-import ColorPickerDisp from './display/ColorPickerDisp.jsx'
 import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
@@ -156,6 +156,7 @@ class App extends React.Component {
           <Route path="/about" component={AboutLayout} />
           <Route path="/alert" component={AlertDisp} />
           <Route path="/authorlist" component={AuthorListDisp} />
+          <Route path="/backgroundcolorpicker" component={BackgroundColorPickerDisp} />
           <Route path="/breadcrumb" component={BreadcrumbDisp} />
           <Route path="/browsecampuses" component={BrowseCampusesLayout} />
           <Route path="/browsedepartments" component={BrowseDepartmentsLayout} />
@@ -167,7 +168,6 @@ class App extends React.Component {
           <Route path="/button" component={ButtonDisp} />
           <Route path="/checkbox" component={CheckboxDisp} />
           <Route path="/columnbox" component={ColumnBoxDisp} />
-          <Route path="/colorpicker" component={ColorPickerDisp} />
           <Route path="/columns" component={ColumnsDisp} />
           <Route path="/customselector" component={CustomSelectorDisp} />
           <Route path="/datatable" component={DataTableDisp} />

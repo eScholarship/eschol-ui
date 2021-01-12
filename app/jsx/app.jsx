@@ -40,6 +40,7 @@ import CampusSearchDisp from './display/CampusSearchDisp.jsx'
 import ColumnBoxDisp from './display/ColumnBoxDisp.jsx'
 import ColumnsDisp from './display/ColumnsDisp.jsx'
 import CheckboxDisp from './display/CheckboxDisp.jsx'
+import CheckContrastDisp from './display/CheckContrastDisp.jsx'
 import CustomSelectorDisp from './display/CustomSelectorDisp.jsx'
 import DataTableDisp from './display/DataTableDisp.jsx'
 import DateRangeDisp from './display/DateRangeDisp.jsx'
@@ -167,6 +168,7 @@ class App extends React.Component {
           <Route path="/campussearch" component={CampusSearchDisp} />
           <Route path="/button" component={ButtonDisp} />
           <Route path="/checkbox" component={CheckboxDisp} />
+          <Route path="/checkcontrast" component={CheckContrastDisp} />
           <Route path="/columnbox" component={ColumnBoxDisp} />
           <Route path="/columns" component={ColumnsDisp} />
           <Route path="/customselector" component={CustomSelectorDisp} />

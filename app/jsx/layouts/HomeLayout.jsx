@@ -81,7 +81,7 @@ class HomeLayout extends React.Component {
         </div>
         <HeroComp />
         <TeaserComp />
-        <main id="maincontent" tabIndex="-1">
+        <main id="maincontent">
           <section className="c-homesection">
             <header>
               <h2>Why Open Access with eScholarship?</h2>

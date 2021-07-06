@@ -50,7 +50,7 @@ class CampusLayout extends React.Component {
         <CampusHeroComp />
         <StatCarouselComp />
         <div className="c-columns">
-          <main id="maincontent" tabIndex="-1">
+          <main id="maincontent">
             <CampusSearchComp />
             <div className="c-campuscarouselframe">
               <h2 className="c-campuscarouselframe__heading"><a href="">Center for Medieval and Renaissance Studies</a></h2>

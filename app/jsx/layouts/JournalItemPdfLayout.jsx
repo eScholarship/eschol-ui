@@ -31,7 +31,7 @@ class JournalItemPdfLayout extends React.Component {
           </ul>
         </nav>
         <div className="c-columns--sticky-sidebar">
-          <main id="maincontent" tabIndex="-1">
+          <main id="maincontent">
             <ItemActionsComp />
             <h1 className="o-heading1a">From the New Heights: The City and Migrating Latinas in Real Women Have Curves and María Full of Grace</h1>
             <AuthorListComp />

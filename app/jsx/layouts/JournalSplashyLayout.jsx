@@ -36,7 +36,7 @@ class JournalSplashyLayout extends React.Component {
         <BreadcrumbComp />
         <MarqueeComp />
         <div className="c-columns">
-          <main id="maincontent" tabIndex="-1">
+          <main id="maincontent">
             <section className="o-columnbox1">
               <ItemActionsComp />
               <CustomSelectorObj />

@@ -97,7 +97,7 @@ class UnitSimpleLayout extends React.Component {
           </ul>
         </nav>
         <div className="c-columns">
-          <main id="maincontent" tabIndex="-1">
+          <main id="maincontent">
             <section className="o-columnbox2">
               <header>
                 <h2>About</h2>

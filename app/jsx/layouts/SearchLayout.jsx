@@ -102,7 +102,7 @@ class SearchLayout extends React.Component {
             <FilterComp />
             <RefineComp />
           </aside>
-          <main id="maincontent" tabIndex="-1">
+          <main id="maincontent">
             <section className="o-columnbox1">
               <header>
                 <h2 aria-live="polite">Informational Pages (12 results)</h2>

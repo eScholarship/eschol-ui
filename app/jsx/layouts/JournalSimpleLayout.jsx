@@ -61,7 +61,7 @@ class JournalSimpleLayout extends React.Component {
           </div>
         </section>
         <div className="c-columns">
-          <main id="maincontent" tabIndex="-1">
+          <main id="maincontent">
             <section className="o-columnbox1">
               <div className="c-itemactions">
                 <a href="" className="c-itemactions__link-buy">Buy Issue</a>

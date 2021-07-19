@@ -13,7 +13,7 @@ class MediaFileDataObj extends React.Component {
   handleCloseModal = () => this.setState({ showModal: false });
 
   componentDidMount() {
-    $('.o-mediafile__heading, .o-mediafile__description').dotdotdot({watch: 'window'});
+    $('.o-mediafile__heading, .o-mediafile__description, .o-mediafile__doi').dotdotdot({watch: 'window'});
   }
   render() {
     return (
@@ -29,6 +29,7 @@ class MediaFileDataObj extends React.Component {
           Eaque, qui rerum fugiat sed. Error aperiam quo atque debitis doloremque. Adipisci, ab placeat! Atque vitae blanditiis, fuga necessitatibus harum libero, repudiandae quasi vero repellendus fugiat asperiores placeat tempore qui vel iusto!
         </div>
         <button className="o-mediafile__view" onClick={this.handleOpenModal}><span>View Media</span></button>
+        <a href="https://www.doi.org/10.5811/westjem.2021.8.49485" className="o-mediafile__doi">https://www.doi.org/10.5811/westjem.2021.8.49485</a>
         <a href="" className="o-mediafile__download" download>Download</a>
         <MediaModalComp showModal={this.state.showModal} handleCloseModal={this.handleCloseModal}>
           <MediaFeatureDataObj />

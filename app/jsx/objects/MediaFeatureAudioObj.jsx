@@ -14,6 +14,7 @@ class MediaFeatureAudioObj extends React.Component {
         <div className="o-mediafeature__description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis optio numquam aut facere odio et accusantium eius quo harum, quis ab molestias illum totam earum nemo voluptatum eligendi nobis. Molestiae reprehenderit et neque nisi nam corporis totam exercitationem, numquam fuga. Sint minima quisquam, velit quod ratione. Vero, libero, accusantium. Rem.
         </div>
+        <a href="https://www.doi.org/10.5811/westjem.2021.8.49485" className="o-mediafeature__doi">https://www.doi.org/10.5811/westjem.2021.8.49485</a>
       </div>
     )
   }

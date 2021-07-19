@@ -14,6 +14,7 @@ class MediaFeatureDataObj extends React.Component {
         <div className="o-mediafeature__description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere neque eligendi possimus excepturi officiis at! Eaque animi quaerat unde dignissimos delectus odio soluta, illo magni et, amet nisi explicabo, ducimus numquam quam totam, optio excepturi harum! Necessitatibus soluta sit sunt exercitationem earum qui obcaecati cupiditate voluptate repellendus, officiis, nobis, error?
         </div>
+        <a href="https://www.doi.org/10.5811/westjem.2021.8.49485" className="o-mediafeature__doi">https://www.doi.org/10.5811/westjem.2021.8.49485</a>
       </div>
     )
   }

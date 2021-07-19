@@ -29,6 +29,7 @@ class AuthorListComp extends React.Component {
           <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
           <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
         </ul>
+        <div className="c-authorlist__copyright">&copy; 2021 by the author(s). <a href="https://escholarship.org/terms">Learn more</a>.</div>
       </div>
     )
   }

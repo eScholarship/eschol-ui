@@ -1,12 +1,9 @@
 // ##### Author List Component ##### //
 
 .c-authorlist {
+  display: grid;
+  grid-template-columns: auto 1fr;
   margin-bottom: $spacing-md;
-
-  @include bp(screen1) {
-    display: flex;
-  }
-
 }
 
 .c-authorlist__year {
@@ -76,4 +73,12 @@
     content: ';\00a0';
   }
 
+}
+
+.c-authorlist__copyright {
+  grid-column: 1 / 3;
+
+  a {
+    @extend %o-textlink__secondary;
+  }
 }

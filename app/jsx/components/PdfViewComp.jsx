@@ -11,6 +11,9 @@ class PdfViewComp extends React.Component {
           <button className="c-pdfview__button-download">Download PDF to View</button>
           <button className="c-pdfview__button-view">View Larger</button>
         </div>
+        <div className="c-pdfview__accessibility">
+          For improved accessibility of PDF content, <a href="">download the file</a> to your device.
+        </div>
         <div className="c-pdfview__viewer">
           [PDF viewer to go here]
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu sem ex. Vivamus sit amet eros ex. Sed iaculis lacus id massa vehicula, sit amet placerat nibh eleifend. Nam elementum dictum orci, eget elementum velit cursus non. Mauris eget placerat purus. Etiam molestie turpis tincidunt justo tempor, sit amet posuere risus congue. Vestibulum rhoncus lorem metus. Integer eleifend in orci vitae volutpat. Donec maximus, lorem commodo faucibus sodales, libero felis bibendum nunc, nec posuere urna purus ac nisi. In lacinia mattis dolor, in efficitur nulla. Nullam sollicitudin est eget luctus sodales. Nullam accumsan hendrerit mauris non pretium. Quisque sit amet vulputate est. Donec elementum purus laoreet, sagittis enim quis, aliquet nisi. Etiam eu arcu eu arcu vestibulum tempus et a elit. Cras fringilla pretium nunc, at pellentesque elit ultricies quis.

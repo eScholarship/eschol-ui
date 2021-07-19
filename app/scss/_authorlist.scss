@@ -11,9 +11,12 @@
 
 .c-authorlist__year {
   align-self: flex-start;
-  margin-right: $spacing-sm;
-  padding-right: $spacing-sm;
-  border-right: 1px solid $color-black;
+
+  + .c-authorlist__list {
+    margin-left: $spacing-sm;
+    padding-left: $spacing-sm;
+    border-left: 1px solid $color-black;
+  }
 }
 
 %c-authorlist__item {

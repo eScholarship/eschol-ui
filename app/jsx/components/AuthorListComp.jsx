@@ -14,19 +14,19 @@ class AuthorListComp extends React.Component {
     return (
       <div className="c-authorlist">
         <ul className="c-authorlist__list">
-          <li className="c-authorlist__begin"><span className="c-authorlist__heading">Author(s):</span> <a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li className="c-authorlist__end"><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li className="c-authorlist__begin"><span className="c-authorlist__heading">Editor(s):</span> <a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li className="c-authorlist__end"><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li className="c-authorlist__begin"><span className="c-authorlist__heading">Advisor(s):</span> <a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
-          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a></li>
+          <li className="c-authorlist__begin"><span className="c-authorlist__heading">Author(s):</span> <a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>; </li>
+          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>;  </li>
+          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>;  </li>
+          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>;  </li>
+          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>;  </li>
+          <li className="c-authorlist__end"><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>  </li>
+          <li className="c-authorlist__begin"><span className="c-authorlist__heading">Editor(s):</span> <a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>; </li>
+          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>;  </li>
+          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>;  </li>
+          <li className="c-authorlist__end"><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>  </li>
+          <li className="c-authorlist__begin"><span className="c-authorlist__heading">Advisor(s):</span> <a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>;  </li>
+          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>;  </li>
+          <li><a href="">{faker.fake("{{name.lastName}}, {{name.firstName}}")}</a>  </li>
           <li><a href="" className="c-authorlist__list-more-link">et al.</a></li>
         </ul>
         <div className="c-authorlist__copyright">&copy; 2021 by the author(s). <a href="https://escholarship.org/terms">Learn more</a>.</div>

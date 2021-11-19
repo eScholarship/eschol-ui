@@ -125,8 +125,8 @@ class AboutLayout extends React.Component {
               </ol>
               <blockquote>Blockquote. {faker.fake("{{lorem.paragraph}}")}
               </blockquote>
-              <p>Bold and italicized text. {faker.fake("{{lorem.paragraph}}")}
-              </p>
+              <h5>Heading Level 5 {(faker.fake("{{commerce.productName}} {{commerce.productName}} {{commerce.productName}}"))}</h5>
+              <p>{faker.fake("{{lorem.paragraph}}")}</p>
               <ModalComp />
             </section>
           </main>
